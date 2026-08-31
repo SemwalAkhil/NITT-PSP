@@ -1,11 +1,17 @@
-from myMath import factorial
+from math import factorial, exp, fabs
 # sum (x^n/n!) = e^x
 
-num: int = int(
-    input("Enter number of terms to which expansion to be calculated: "))
 x: float = float(input("Enter value of x in e^x: "))
 sum: float = 0
-for i in range(0, num):
-    sum = sum + (x ** i)/factorial(i)
-    print("<{}> {}^{}/{}!".format(i+1, x, i, i))
-print("\n{}".format(sum))
+i: int = 0
+term: float = (x ** i)/factorial(i)
+accuracy: int = 6
+
+print("\n============ CALCULATIONS ===============\n")
+while fabs(term) > 10**(-accuracy):
+    term = (x ** i)/factorial(i)
+    print("{:.6f} = <{}> {}^{}/{}!".format(term, i+1, x, i, i))
+    sum = sum + term
+    i += 1
+print("\n=========================================\n")
+print("\nMY = {:.6f}\nActual = {:.6f}".format(sum, exp(x)))

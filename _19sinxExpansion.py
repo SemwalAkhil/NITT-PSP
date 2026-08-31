@@ -1,12 +1,21 @@
-from myMath import factorial
+from math import factorial, radians, fabs, sin
+
 # sum (-1)^(n-1) * x ^ (2n-1) / (2n - 1)!
 
-num: int = int(
-    input("Enter number of terms to which expansion to be calculated: "))
-x: float = float(input("Enter value of x in radians: "))
+x: float = radians(float(input("Enter value of x in degrees: ")))
 sum: float = 0
-for i in range(1, num):
-    sum = sum + (-1)**(i-1) * ((x ** (2*i-1))/factorial((2*i-1)))
-    print("<{}> (-1)^{} * {} ^ {} / {}!".format(i,i-1, x, 2 * i - 1, 2 * i - 1))
+i: int = 1
+term: float = (-1)**(i-1) * ((x ** (2*i-1))/factorial((2*i-1)))
+accuracy: int = 6
 
-print("\n{}".format(sum))
+print("\n============ CALCULATIONS ===============\n")
+print("{:+.6f} = <{}> (-1)^{} * {} ^ {} / {}!".format(term, i,
+                                                      i-1, x, 2 * i - 1, 2 * i - 1))
+
+    sum += term
+    i += 1
+    term = (-1)**(i-1) * ((x ** (2*i-1))/factorial((2*i-1)))
+    print("{:+.6f} = <{}> (-1)^{} * {} ^ {} / {}!".format(term, i,
+          i-1, x, 2 * i - 1, 2 * i - 1))
+print("\n=========================================\n")
+print("\nMY = {:.6f}\nActual = {:.6f}".format(sum, sin(x)))
