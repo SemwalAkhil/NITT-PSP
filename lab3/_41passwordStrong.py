@@ -1,26 +1,4 @@
 '''
-PROBLEM STATEMENT: Given a passphrase, create a password
-INPUT: Passphrase (P)
-OUTPUT: Password (O)
-Read P
-Words <- P.split()
-O <- ""
-For word in Words do
-|   O += word.last_letter.upper + word.first_letter + (word.mid_letter.ascii - 10).character
-Write O 
-'''
-
-
-def passToPassphrase(string: str) -> str:
-    words = string.split()
-    passw = ""
-    for word in words:
-        passw += word[-1].upper() + str(ord(word[0])) + \
-            chr(ord(word[len(word)//2]) - 10)
-    return passw
-
-
-'''
 PROBLEM STATEMENT: Given a password check if it is strong or not
 INPUT: Password (P)
 OUTPUT: Strong (S)
@@ -66,8 +44,5 @@ def checkStrongPass(string: str) -> bool:
     return strong
 
 
-inputStr = input("Enter pass phrase: ")
-password = passToPassphrase(inputStr)
-print("Password is: ", password)
+password = input("Enter password: ")
 print("Password is: ", "Strong" if checkStrongPass(password) else "Weak")
-print("Input String is: ", "Strong" if checkStrongPass(inputStr) else "Weak")

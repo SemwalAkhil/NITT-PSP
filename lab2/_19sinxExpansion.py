@@ -11,7 +11,7 @@ accuracy: int = 6
 print("\n============ CALCULATIONS ===============\n")
 print("{:+.6f} = <{}> (-1)^{} * {} ^ {} / {}!".format(term, i,
                                                       i-1, x, 2 * i - 1, 2 * i - 1))
-
+while fabs(term) > 10**(-accuracy):
     sum += term
     i += 1
     term = (-1)**(i-1) * ((x ** (2*i-1))/factorial((2*i-1)))
