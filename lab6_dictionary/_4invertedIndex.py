@@ -32,4 +32,21 @@ for word in phrase:
 
 print(refcount)
 
+high1 = (0,0)
+high2 = (0,0)
+high3 = (0,0)
+
+for page,refs in refcount.items():
+    if refs > high3[1] and refs > high2[1] and refs > high1[1]:
+        high1 = (page,refs)
+    elif refs > high3[1] and refs > high2[1]:
+        high2 = (page,refs)
+    elif refs > high3[1]:
+        high3 = (page,refs)
+
+print("============= TOP 3 Pages ============= ")
+print(f"Page: {high1[0]} Matches: {high1[1]}")
+print(f"Page: {high2[0]} Matches: {high2[1]}")
+print(f"Page: {high3[0]} Matches: {high3[1]}")
+
 
