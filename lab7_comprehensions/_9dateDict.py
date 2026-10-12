@@ -10,9 +10,11 @@ exp_list = [
     "20-02-2026", 80,
     "25-02-2026", 2100
 ]
+
 exp_dict = {}
 exp_dict = {
-    exp_list[date_in]:exp_dict[exp_list[date_in]].append(exp_list[date_in+1]) if exp_dict.get(exp_list[date_in],False) else [exp_list[date_in+1]]
-    for date_in in range(0,len(exp_list),2)
+    date:[exp_list[date_in + 1] for date_in in range(len(exp_list)) if exp_list[date_in] == date]
+    for date in exp_list[::2]
 }
+
 print(exp_dict)
