@@ -1,8 +1,17 @@
+'''
+INPUT:  mac(M)                                           00:1A:2B:3C:4D:5E
+OUTPUT: result(R)                                        00:1A:2B 3C:4D:5E
+
+INPUT:  mac(M)                                           00:1A:2B:3C:4D:5G
+OUTPUT: result(R)                                        Invalid
+'''
 import re
+
 mac = input("Enter MAC address: ").upper()
-match = re.findall(r"[0-9A-F]{2}",mac)
+match = re.search(r"\b([0-9A-F]{2}(?:[:-][0-9A-F]{2}){2})[:-]([0-9A-F]{2}(?:[:-][0-9A-F]{2}){2})\b", mac)
+
 if match:
-    print(f"Vendor OUI: {':'.join(match[:3])}")
-    print(f"Device ID: {':'.join(match[-3:])}")
+    for item in match.groups():
+        print(item, end=" ")
 else:
-    print("Invalid MAC")
+    print("Invalid")

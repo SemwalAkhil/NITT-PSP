@@ -1,12 +1,10 @@
 import re
-pan_num = input('Enter pan number: ')
-match = re.match(r"([A-Z]{3})([PCHFATBGJL])([A-Z])([0-9]{4})([A-Z])",pan_num)
+
+pan_num = input("Enter pan number: ")
+match = re.search(r"\b([A-Z]{3})([PCHFATBGJL])([A-Z])(\d{4})([A-Z])\b", pan_num)
+
 if match:
-    print("Valid pan number")
-    print(f"Series: {match.group(1)}")
-    print(f"Type: {match.group(2)}")
-    print(f"Surname First Letter: {match.group(3)}")
-    print(f"Sequential Number: {match.group(4)}")
-    print(f"Check Code: {match.group(5)}")
+    for item in match.groups():
+        print(item, end=" ")
 else:
-    print("Invalid pan number")
+    print("Invalid")

@@ -1,11 +1,19 @@
+'''
+INPUT:  url(U)                                           https://example.com/index.html
+OUTPUT: result(R)                                        https example.com /index.html
+INPUT:  url(U)                                           ftp://sub.domain.org
+OUTPUT: result(R)                                        ftp sub.domain.org /
+'''
 import re
+
 url = input("Enter URL: ")
-match = re.match(r"([A-Za-z][A-Za-z0-9\+\.\-])+://([A-Za-z0-9-\.]{,255})",url)
+match = re.search(r"\b([A-Za-z][A-Za-z0-9\+\.\-]*)://([A-Za-z0-9-\.]+)(/[^\s]*)?\b", url)
 
 if match:
-    print("Valid URL")
-    print("Protocol: ",match.group(1))
-    print("Domain: ",match.group(2))
-    print("Path: ",match.group(3))
+    for item in match.groups():
+        if item:
+            print(item, end=" ")
+        else:
+            print("/", end=" ")
 else:
-    print("Invalid URL")
+    print("Invalid")

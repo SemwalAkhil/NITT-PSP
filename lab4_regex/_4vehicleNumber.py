@@ -1,8 +1,11 @@
-# TN45AB1234
+#Vehicle number TN45AB1234
 import re
-vehicleNumber = input("Enter vehicle number (AB12CD3456): ")
-match = re.search(r"([A-Z]{2})([0-9]{2})([A-Z]{2})([0-9]{4})", vehicleNumber)
-print("State Code   : ", match.group(1))
-print("District Code: ", match.group(2))
-print("Series Code  : ", match.group(3))
-print("Unique Number: ", match.group(4))
+
+text = input("Text: ")
+match = re.search(r"\b([A-Z]{2})(\d{2})([A-Z]{2})(\d{4})\b", text)
+
+if match:
+    for item in match.groups():
+        print(item, end=" ")
+else:
+    print("Not found")

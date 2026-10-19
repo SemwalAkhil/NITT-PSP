@@ -1,9 +1,9 @@
 import re
+
 password = input("Enter a password: ")
-if len(password) > 8:
-    if re.findall(r"\d",password) and re.findall(r"[A-Z]",password) and re.findall(r"[a-z]",password) and re.findall(r"[^A-Za-z0-9\s]",password):
-        print("Strong Password")
-    else:
-        print("Weak Password")
+if (len(password) >= 8 and re.search(r"\d", password)
+    and re.search(r"[A-Z]", password) and re.search(r"[a-z]", password)
+    and re.search(r"[^A-Za-z0-9\s]", password)):
+    print("Strong")
 else:
-    print("Weak password")
+    print("Weak")

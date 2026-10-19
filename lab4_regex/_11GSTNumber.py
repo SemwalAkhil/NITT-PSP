@@ -1,11 +1,10 @@
 import re
+
 gst_num = input("Enter GST number: ")
-match = re.match(r"([0-9]{2})([A-Z0-9]{10})([0-9])Z([0-9])",gst_num)
+match = re.search(r"\b(\d{2})([A-Z]{5}\d{4}[A-Z])([1-9A-Z])Z([A-Z0-9])\b", gst_num)
+
 if match:
-    print("Valid GST number")
-    print(f"State Code: {match.group(1)}")
-    print(f"PAN: {match.group(2)}")
-    print(f"Number of registrations on PAN: {match.group(3)}")
-    print(f"Checksum: {match.group(4)}")
+    for item in match.groups():
+        print(item, end=" ")
 else:
-    print("Invalid GST number")
+    print("Invalid")

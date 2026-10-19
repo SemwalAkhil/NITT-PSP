@@ -4,7 +4,7 @@ INPUT:  String (S1), Substring(S2)
 OUTPUT: Index (I1), Index + Length (I2)
 Read S1, S2
 I1 <- S1.find(S2)
-Write Index, Index + len(S2)
+Write I1, I1 + len(S2)
 '''
 string1 = input("Enter sentence: ")
 string2 = input("Enter substring: ")

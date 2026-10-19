@@ -1,5 +1,5 @@
 '''
-PROBLEM STATEMENT: Given to strings find the largest common part from the start of the strings
+PROBLEM STATEMENT: Given two strings find the largest common part from the start of the strings
 INPUT: String1 (S1), String2 (S2)
 OUTPUT: Common String (O)
 Read S1, S2
