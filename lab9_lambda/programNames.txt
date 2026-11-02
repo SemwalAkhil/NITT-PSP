@@ -1,0 +1,17 @@
+corruptSentence
+stringRev
+hastagsToWords
+addGST
+highTemp
+offerCode
+marksToPercentage
+highestShare
+problemsSolved
+stringsPhraseToPass
+stringsCheckPass
+stringsStrongPass
+stringsPiglation
+listPhraseToPass
+listCheckPass
+listStrongPass
+listPiglation

@@ -5,4 +5,4 @@ def checkPass(password:str):
     
 
 if __name__ == "__main__":
-    print([f"{key}:{val}" for key,val in dict(map(checkPass,passwordToPassphrase()))])
+    print("{}".format(checkPass(passwordToPassphrase()).items()))

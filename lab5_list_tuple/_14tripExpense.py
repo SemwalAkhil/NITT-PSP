@@ -1,5 +1,5 @@
 """
-14. sb trip pe gye h , sbne paise kre h. input is paye name and amounmt. Ab hisab krna h. Show the share per person. Average amount paid by each person. How much one owes to another
+14. For a trip expenses. Show the share per person. Average amount paid by each person. How much one owes to another
 
 INPUT: payments(P) (("A", 300), ("B", 100))
 OUTPUT:

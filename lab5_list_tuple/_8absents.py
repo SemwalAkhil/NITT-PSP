@@ -4,6 +4,7 @@ ex: ['25-9-2026',51,101,67, '26-9-2026',51,101,68,59, '27-9-2026', 101,51, 28, 6
 find date wise absentees.
 find for each roll no, how much class absent
 
+INPUT: ['25-9-2026',51,101,67, '26-9-2026',51,101,68,59, '27-9-2026', 101,51, 28, 65]
 OUTPUT: 
 Absent students on 25-9-2026: 51 101 67 
 Absent students on 26-9-2026: 51 101 68 59 
@@ -15,18 +16,6 @@ Total classes absent by roll no 65: 1
 Total classes absent by roll no 67: 1
 Total classes absent by roll no 68: 1
 Total classes absent by roll no 101: 3
-
-INPUT: data(D) ['25-9-2026', 51, 67]
-OUTPUT:
-Absent students on 25-9-2026: 51 67
-Total classes absent by roll no 51: 1
-Total classes absent by roll no 67: 1
-
-INPUT: data(D) ['25-9-2026', 51, '26-9-2026', 51]
-OUTPUT:
-Absent students on 25-9-2026: 51
-Absent students on 26-9-2026: 51
-Total classes absent by roll no 51: 2
 """
 
 data = ['25-9-2026', 51, 101, 67, '26-9-2026', 51, 101, 68, 59,

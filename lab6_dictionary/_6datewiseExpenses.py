@@ -10,7 +10,6 @@ temp = 0
 total_per_date = {
     date:0 for date in expenses.keys()
 }
-print(total_per_date)
 for date,amounts in expenses.items():
     for amount in amounts:
         total_per_date[date] += amount 
