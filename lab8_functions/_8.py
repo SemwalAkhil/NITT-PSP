@@ -1,0 +1,1 @@
+# write a function to rephrase a sentence while replacing a word with a list of synonyms from

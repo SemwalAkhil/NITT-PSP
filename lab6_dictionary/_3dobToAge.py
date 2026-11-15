@@ -2,8 +2,8 @@ from datetime import date
 from dateutil.relativedelta import relativedelta
 
 num = int(input("Enter number of students: "))
-dob:dict[str:str] = {}
-age:dict[str:str] = {}
+dob:dict[str,str] = {}
+age:dict[str,str] = {}
 for i in range(num):
     name = input("Enter student name: ")
     dob[name] = input("Enter dob (DD/MM/YYYY): ")[:10]

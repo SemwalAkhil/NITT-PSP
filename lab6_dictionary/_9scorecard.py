@@ -1,4 +1,4 @@
-match_data:dict[str:tuple] = {
+match_data:dict[str,list] = {
     "Chennai Super Kings": [
         ("Ruturaj Gaikwad", 45, 0),
         ("Devon Conway", 32, 0),

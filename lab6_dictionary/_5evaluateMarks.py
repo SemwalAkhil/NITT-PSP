@@ -1,11 +1,11 @@
-answer_key:str = ('A','B','B','C','A','D','A')
-students:dict[int, tuple[str]] = {
+answer_key:tuple[str,...] = ('A','B','B','C','A','D','A')
+students:dict[int, tuple[str,...]] = {
     1: ("A","B","B","C","A","D","A"),  # Perfect score
     2: ("A","B","A","C","B","D","A"),  # Missed Q3 and Q5
     3: ("B","B","B","C","A","D","C"),  # Missed Q1 and Q7
     4: ("A","C","B","C","A","D","A"),  # Missed Q2
 }
-marks:dict[int:int] = {
+marks:dict[int,int] = {
     i:0 for i in range(1,len(students.items())+1)
 }
 for roll,options in students.items():
