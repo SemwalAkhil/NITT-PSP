@@ -6,7 +6,6 @@ expenses = {
     "05-04-2026":[50,2000],
     "06-04-2026":[400,1600],
 }
-temp = 0
 total_per_date = {
     date:0 for date in expenses.keys()
 }

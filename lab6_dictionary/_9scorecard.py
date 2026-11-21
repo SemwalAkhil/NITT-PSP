@@ -67,7 +67,7 @@ match_data:dict[str,list] = {
 }
 max_run:tuple = ("",0,0)
 max_wicket:tuple = ("",0,0) 
-team_totals:dict[str:tuple[int]] = {}
+team_totals:dict[str,list] = {}
 team_highest_score:tuple = ("",0)
 team_highest_wicket:tuple = ("",0)
 
@@ -87,5 +87,5 @@ for team,players in match_data.items():
 
 print(f"Player with max runs {max_run[0]} - {max_run[1]} runs")
 print(f"Player with max wickets {max_wicket[0]} - {max_wicket[2]} wickets")
-print(f"Player with max runs {team_highest_score[0]} - {team_highest_score[1]} runs")
-print(f"Player with max wickets {team_highest_wicket[0]} - {team_highest_wicket[1]} wickets")
+print(f"Team with max runs {team_highest_score[0]} - {team_highest_score[1]} runs")
+print(f"Team with max wickets {team_highest_wicket[0]} - {team_highest_wicket[1]} wickets")

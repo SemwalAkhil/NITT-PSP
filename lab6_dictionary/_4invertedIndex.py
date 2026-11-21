@@ -37,9 +37,12 @@ high2 = (0,0)
 high3 = (0,0)
 
 for page,refs in refcount.items():
-    if refs > high3[1] and refs > high2[1] and refs > high1[1]:
+    if refs > high1[1]:
+        high3 = high2
+        high2 = high1
         high1 = (page,refs)
-    elif refs > high3[1] and refs > high2[1]:
+    elif refs > high2[1]:
+        high3 = high2
         high2 = (page,refs)
     elif refs > high3[1]:
         high3 = (page,refs)

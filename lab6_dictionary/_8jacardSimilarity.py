@@ -19,20 +19,12 @@ for node,degree in degrees.items():
 
 for node1 in graph:
     for node2 in graph:
-        if not similarity.get(f"{node2}-{node1}",False):
-            inter = []
-            union = []
-            small = node1 if degrees[node2][0] > degrees[node1][0] else node2
-            big = node1 if small == node2 else node2
-            for out in small:
-                if out in big:
-                    inter.append(out)
-            print(inter)
-            for out in small:
-                if out not in big:
-                    union.append(out)
-            print(union)
-            jacard = len(inter)/len(union)
-            similarity[f"{node2}-{node1}"] = (inter,union,jacard)
+        if node1 != node2 and not similarity.get(f"{node2}-{node1}",False):
+            nbr1 = set(graph[node1])
+            nbr2 = set(graph[node2])
+            inter = list(nbr1.intersection(nbr2))
+            union = list(nbr1.union(nbr2))
+            jacard = len(inter)/len(union) if len(union) > 0 else 0.0
+            similarity[f"{node1}-{node2}"] = (inter,union,jacard)
 
 print(similarity)
