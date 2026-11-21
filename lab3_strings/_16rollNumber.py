@@ -6,7 +6,7 @@ if roll[:1] == "2":
     print("Type      : PG")
 if roll[1:3] == "05":
     print("Department: Computer Applications")
-    if roll[3:4] == "01":
+    if roll[3:5] == "01":
         print("Course    :MCA")
 print(f"Year      : 20{roll[4:6]}")
 print(f"Sequence  : {roll[6:]}")

@@ -2,7 +2,7 @@
 string1 = input("Enter string 1: ")
 string2 = input("Enter string 2: ")
 if len(string1) == len(string2):
-    if string1.split().sort() == string2.split().sort():
+    if sorted(string1) == sorted(string2):
         print("Anagram")
     else:
         print("Not Anagram")

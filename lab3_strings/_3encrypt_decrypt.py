@@ -1,8 +1,13 @@
 def encrypt(string):
-    for i in range(len(string)):
-        ascii = ord(string[i])
-        string = string.replace(string[i],chr(ord('Z') - ascii + ord('A')) if ascii <= ord('Z') else  chr(ord('z') - ascii + ord('a')) )
-    return string
+    res = ""
+    for char in string:
+        if 'a' <= char <= 'z':
+            res += chr(ord('z') - ord(char) + ord('a'))
+        elif 'A' <= char <= 'Z':
+            res += chr(ord('Z') - ord(char) + ord('A'))
+        else:
+            res += char
+    return res
 
 string = input("Enter a string: ")
 print("Original String: ",string)
