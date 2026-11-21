@@ -9,20 +9,16 @@ print("Total expense:", total)
 print("Share per person:", share)
 print("Average amount paid:", share)
 
-balances = ()
+balances = []
 
 for person in payments:
-    balances += ((person[0], person[1] - share),)
+    balances.append([person[0], person[1] - share])
 
-for person in balances:
-    if person[1] < 0:
-        for other in balances:
-            if other[1] > 0:
-                amount = min(-person[1], other[1])
-                print(person[0], "owes", other[0], ":", round(amount, 2))
-                balances = tuple(
-                    (p[0], p[1] + amount if p[0] == person[0]
-                     else p[1] - amount if p[0] == other[0] else p[1])
-                    for p in balances
-                )
-                break
+for i in range(len(balances)):
+    if balances[i][1] < 0:
+        for j in range(len(balances)):
+            if balances[j][1] > 0 and balances[i][1] < 0:
+                amount = min(-balances[i][1], balances[j][1])
+                print(balances[i][0], "owes", balances[j][0], ":", round(amount, 2))
+                balances[i][1] += amount
+                balances[j][1] -= amount
