@@ -7,9 +7,9 @@ def factorial(num:int):
 
 def ncr(n,r):
     if (0 <= r <= n):
-        return factorial(n)/(factorial(r)*factorial(n-r))
+        return factorial(n) // (factorial(r) * factorial(n-r))
     else:
-        return 1
+        return 0
 
 if __name__ == "__main__":
     n = 5
