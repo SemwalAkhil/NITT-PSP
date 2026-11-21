@@ -1,0 +1,1 @@
+# make a list of date,expense tuples and filter greater than a given expense

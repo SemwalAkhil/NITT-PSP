@@ -1,3 +1,4 @@
+# check password strength, make a password:strength dictionary, filter strong passwords and return a list of strong passwords
 from _1passphraseToPassword import passwordToPassphrase
 import re
 def checkPass(password:str):    

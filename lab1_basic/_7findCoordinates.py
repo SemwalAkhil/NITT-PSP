@@ -1,0 +1,1 @@
+# for given coordinates of a point print the quadrant in which it lies

@@ -1,22 +1,3 @@
-"""
-13. program to store investment. input: ('25-9-2026', 'Birla Cements', 500, 400). Show stock wise pL. Date wise pL. Overall pL
-
-INPUT: investments(I) [('25-9-2026','ABC',500,400)]
-OUTPUT:
-Stock-wise P/L:
-ABC : -100
-Date-wise P/L:
-25-9-2026 : -100
-Overall P/L: -100
-
-INPUT: investments(I) [('25-9-2026','ABC',500,600)]
-OUTPUT:
-Stock-wise P/L:
-ABC : 100
-Date-wise P/L:
-25-9-2026 : 100
-Overall P/L: 100
-"""
 investments = [
     ('25-9-2026', 'Birla Cements', 500, 400),
     ('25-9-2026', 'TCS', 300, 400),

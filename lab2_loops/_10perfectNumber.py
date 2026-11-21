@@ -1,14 +1,3 @@
-"""
-Read n
-s <- 0
-For i <- 1 to floor(n/2) + 1 do
-    If n % i = 0 do
-        s <- s + i
-If s = n do
-    Print(Perfect)
-Else do
-    Print(Not Perfect)
-"""
 n:int = int(input("Enter a number: "))
 s = 0
 for i in range(1,n//2+1):

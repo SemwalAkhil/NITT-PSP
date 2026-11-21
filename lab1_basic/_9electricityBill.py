@@ -1,0 +1,1 @@
+# for given usage in units and cost per unit calculate the electricity bill

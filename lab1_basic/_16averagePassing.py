@@ -1,0 +1,1 @@
+# Calculate the average of passing marks for a given list of students

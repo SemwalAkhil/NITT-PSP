@@ -1,0 +1,1 @@
+# write a regex to match a product ID of the form "PRODXXXX" where XXXX is a 4-digit number

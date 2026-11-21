@@ -1,0 +1,1 @@
+# for given principal amount, rate of interest and time period calculate emi

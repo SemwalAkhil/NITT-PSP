@@ -1,14 +1,3 @@
-'''
-
-PROBLEM STATEMENT: Encrypt/Decrypt a given string of characters 
-INPUT: String (S)
-OUTPUT: Encrypted/Decrypted String
-Read S
-For i <- 0 to len(S) do
-|   ascii <- ord(S[i])
-|   S <- S.replace(S[i], Z - ascii + A) or S.replace(S[i], z - ascii + a)
-Write S
-'''
 def encrypt(string):
     for i in range(len(string)):
         ascii = ord(string[i])

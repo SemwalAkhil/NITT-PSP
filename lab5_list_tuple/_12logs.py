@@ -1,21 +1,3 @@
-"""
-12. Store logs of different types ( ex normal, critical etc) with time stamp. Show cateogyr wise logs and hour wise.
-
-INPUT: logs(L) [("09:15","normal","Started")]
-OUTPUT:
-normal:
-('09:15', 'normal', 'Started')
-09:00
-('09:15', 'normal', 'Started')
-
-INPUT: logs(L) [("10:30","critical","Error")]
-OUTPUT:
-critical:
-('10:30', 'critical', 'Error')
-10:00
-('10:30', 'critical', 'Error')
-"""
-
 logs = [
     ("09:15", "normal", "Started"),
     ("09:30", "critical", "Disk full"),

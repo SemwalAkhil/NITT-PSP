@@ -1,0 +1,1 @@
+# a water tank initially full leaks every second. if person leaves it for some days find out remaining water in tank.

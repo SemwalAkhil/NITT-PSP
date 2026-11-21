@@ -1,0 +1,1 @@
+# write a function to generate product id and store details using same dictionary

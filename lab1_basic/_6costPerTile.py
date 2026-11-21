@@ -1,0 +1,1 @@
+# Calculate the cost per tile for a given area and total cost

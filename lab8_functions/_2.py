@@ -27,7 +27,8 @@ def mul(mat1:list[list[int]],mat2:list[list[int]]):
         return ans
     else:
         return []
-def sub(mat1:list[list[int]],mat2:list[list[int]]):
+    
+def trans(mat1:list[list[int]],mat2:list[list[int]]):
     if (0 != len(mat1) == len(mat2) != 0 or len(mat1[0]) == len(mat2[0])):
         ans = []
         for i in range(len(mat1)):

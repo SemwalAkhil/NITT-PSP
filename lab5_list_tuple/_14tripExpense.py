@@ -1,19 +1,3 @@
-"""
-14. For a trip expenses. Show the share per person. Average amount paid by each person. How much one owes to another
-
-INPUT: payments(P) (("A", 300), ("B", 100))
-OUTPUT:
-Total expense: 400
-Share per person: 200.0
-Average amount paid: 200.0
-B owes A : 100.0
-
-INPUT: payments(P) (("A", 100), ("B", 100))
-OUTPUT:
-Total expense: 200
-Share per person: 100.0
-Average amount paid: 100.0
-"""
 payments = (("A", 500), ("B", 300), ("C", 100))
 total = 0
 
