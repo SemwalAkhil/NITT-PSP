@@ -1,1 +1,10 @@
-# write a regex to match a product ID of the form "PRODXXXX" where XXXX is a 4-digit number
+import re
+
+pid = input("Enter product ID: ")
+match = re.search(r"\bPROD(\d{4})\b", pid)
+
+if match:
+    for item in match.groups():
+        print(item, end=" ")
+else:
+    print("Invalid")
