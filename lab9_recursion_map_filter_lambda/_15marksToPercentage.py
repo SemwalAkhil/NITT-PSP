@@ -3,4 +3,4 @@ marks = {
     2 : [90,60,50,40],
     3 : [10,50,30,40],
 }
-print("\n".join(map(lambda x: f"{x}:{sum(marks[x])/4}%",marks.keys())))
+print("\n".join(map(lambda x: f"{x}:{sum(marks[x])/len(marks[x])}%",marks.keys())))

@@ -7,5 +7,5 @@ solved = {
 }
 total_solved = dict(map(lambda x: (x,sum(solved[x])),solved))
 max_q = f.reduce(lambda x,y: x if total_solved[x] > total_solved[y] else y,total_solved.keys())
-print(total_solved,sep="\n")
+print("\n".join(map(lambda x: f"{x}: {total_solved[x]}", total_solved)))
 print("Max: ",max_q)
