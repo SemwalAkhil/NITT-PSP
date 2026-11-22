@@ -1,3 +1,9 @@
+# 10. Write a menu-driven program to add, view, and search contacts in a contact book using functions.
+# Input: (1 Akhil a@b.com 12345 2 3 Akhil 4)
+# Output:
+#   Name: Akhil, Email: a@b.com, Phone: 12345
+#   Found - Name: Akhil, Email: a@b.com, Phone: 12345
+
 def addContact(book: dict, name: str, email: str, phone: str):
     book[name] = {"email": email, "phone": phone}
 

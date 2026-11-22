@@ -1,4 +1,9 @@
-# write a function to calculate the factorial and ncr
+# 1. Write functions to calculate the factorial of a number and nCr (combinations).
+# Input: n=5, r=2
+# Output:
+#   Factorial 5: 120
+#   nCr 5C2: 10
+
 def factorial(num:int):
     if num > 0:
         return num * factorial(num-1)

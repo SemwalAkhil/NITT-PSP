@@ -1,3 +1,11 @@
+# 2. Write functions to add, subtract, multiply, and transpose matrices.
+# Input: m1=[[1, 2], [3, 4]], m2=[[5, 6], [7, 8]]
+# Output:
+#   Add:  [[6, 8], [10, 12]]
+#   Sub:  [[-4, -4], [-4, -4]]
+#   Mul:  [[19, 22], [43, 50]]
+#   Trans:  [[1, 3], [2, 4]]
+
 def add(mat1:list[list[int]],mat2:list[list[int]]):
     if len(mat1) == len(mat2) and len(mat1[0]) == len(mat2[0]):
         ans = []

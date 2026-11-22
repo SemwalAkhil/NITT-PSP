@@ -1,3 +1,9 @@
+# 6. Write functions to add and subtract two polynomials represented as coefficient lists.
+# Input: poly1=[2, 0, 3], poly2=[1, 4, 1]
+# Output:
+#   Add:  [3, 4, 4]
+#   Sub:  [1, -4, 2]
+
 def addPoly(p1: list[int], p2: list[int]):
     n = max(len(p1), len(p2))
     res = [0] * n

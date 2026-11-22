@@ -1,3 +1,7 @@
+# 3. Write a function to split a camelCase or PascalCase hashtag into words using regular expressions.
+# Input: tag="#HelloWorldPython"
+# Output: Hello World Python
+
 import re
 
 def hashtagToWords(tag: str):

@@ -1,3 +1,7 @@
+# 7. Write a function to determine the best team and best player from a tournament statistics dictionary.
+# Input: tourney={"CSK": [("Dhoni", 50, 0), ("Jadeja", 40, 2)], "MI": [("Rohit", 85, 0), ("Bumrah", 10, 3)]}
+# Output: ('MI', 'Rohit')
+
 def getBestTeamAndPlayer(tournament: dict):
     best_team = ("", 0)
     best_player = ("", 0)

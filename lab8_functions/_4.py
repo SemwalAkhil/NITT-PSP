@@ -1,3 +1,7 @@
+# 4. Write a function to check password strength based on length, cases, digits, and special characters.
+# Input: p="Pass@1234", p="weak"
+# Output: Pass@1234 : True, weak : False
+
 import re
 
 def checkPass(password: str):
