@@ -1,3 +1,11 @@
+# 4. Write a program to build an inverted index from documents and retrieve top 3 matching pages for a query phrase.
+# Input: ("technology institute india"), ("engineering college")
+# Output:
+#   ============= TOP 3 Pages ============= 
+#   Page: 1 Matches: 2
+#   Page: 2 Matches: 1
+#   Page: 3 Matches: 1
+
 import re
 text:dict[int,str] = {
     1: "The National Institute of Technology Tiruchirappalli (NIT-Tiruchirappalli or NIT-Trichy) is a national research deemed university near the city of Tiruchirappalli in Tamil Nadu, India. It was founded as Regional Engineering College Tiruchirappalli in 1964 by the governments of India and Tamil Nadu under the affiliation of the University of Madras. The college was granted deemed university status in 2003 with the approval of the University Grants Commission (UGC), the All India Council for Technical Education (AICTE), and the Government of India and renamed the National Institute of Technology Tiruchirappalli.",    

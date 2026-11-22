@@ -1,3 +1,11 @@
+# 9. Write a program to find top run-scorers and wicket-takers among players and teams from match data.
+# Input: None (data defined in the script)
+# Output:
+#   Player with max runs Travis Head - 89 runs
+#   Player with max wickets Deepak Chahar - 3 wickets
+#   Team with max runs Sunrisers Hyderabad - 247 runs
+#   Team with max wickets Sunrisers Hyderabad - 12 wickets
+
 match_data:dict[str,list] = {
     "Chennai Super Kings": [
         ("Ruturaj Gaikwad", 45, 0),

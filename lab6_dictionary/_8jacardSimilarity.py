@@ -1,3 +1,10 @@
+# 8. Write a program to compute Jaccard similarity and in/out degrees of nodes in a directed graph.
+# Input: None (data defined in the script)
+# Output:
+#   A: OUT: 2 IN: 3
+#   B: OUT: 3 IN: 3
+#   C: OUT: 1 IN: 2
+
 graph = {
     "A": ["B", "C"],
     "B": ["A", "D", "E"],

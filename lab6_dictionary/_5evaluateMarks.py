@@ -1,3 +1,11 @@
+# 5. Write a program to evaluate student quiz answers against an answer key and compute total scores using dictionaries.
+# Input: None (data defined in the script)
+# Output:
+#   1: 7
+#   2: 5
+#   3: 5
+#   4: 6
+
 answer_key:tuple[str,...] = ('A','B','B','C','A','D','A')
 students:dict[int, tuple[str,...]] = {
     1: ("A","B","B","C","A","D","A"),  # Perfect score

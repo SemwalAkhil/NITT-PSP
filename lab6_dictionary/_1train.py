@@ -1,3 +1,7 @@
+# 1. Write a program to generate a formatted train identification code from user inputs.
+# Input: (MAS SBC SE SR 7 01), (NDLS BCT VE NR 5 02)
+# Output: MAS-SBC-SESR--701, NDLSBCT-VENR--502
+
 source = input("Enter train's starting station code: ")[:4].upper().ljust(4,"-") # 2-4 alphabet code
 destination = input("Enter train's ending station code: ")[:4].upper().ljust(4,"-") # 2-4 alphabet code
 print('''RE: Rajdhani Express

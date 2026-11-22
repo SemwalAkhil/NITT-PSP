@@ -1,3 +1,7 @@
+# 3. Write a program to calculate age in years, months, and days for multiple students using a dictionary.
+# Input: (1 Akhil 15/08/2000), (1 John 01/01/2010)
+# Output: Akhil: 26 years, 3 months, 7 days (depends on today's date), John: 16 years, 10 months, 21 days (depends on today's date)
+
 from datetime import date
 
 num = int(input("Enter number of students: "))

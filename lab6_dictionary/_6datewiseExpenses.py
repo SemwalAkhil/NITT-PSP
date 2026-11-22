@@ -1,3 +1,10 @@
+# 6. Write a program to calculate datewise and monthwise expense totals from a dictionary of expenses.
+# Input: None (data defined in the script)
+# Output:
+#   17-01-2026: 3500
+#   29-01-2026: 300
+#   {'01': 3800, '02': 100, '03': 200, '04': 4050}
+
 expenses = {
     "17-01-2026":[500,1000,2000],
     "29-01-2026":[100,200],
