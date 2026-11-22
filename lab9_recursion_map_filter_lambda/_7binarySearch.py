@@ -1,3 +1,7 @@
+# 7. Write a program to search for a target value in a sorted list using recursive binary search.
+# Input: (40), (99)
+# Output: Found at index:  3, Not found
+
 def binarySearch(arr: list, low: int, high: int, target):
     if low > high:
         return -1

@@ -1,4 +1,7 @@
-# check password strength, make a password:strength dictionary, filter strong passwords and return a list of strong passwords
+# 2. Write a program to evaluate password strengths into a dictionary using map and lambda.
+# Input: None (data defined in the script)
+# Output: {'c112tl109nt115y': False, 'T98eF99nM114rC111d': True, 'P97eE116sL109nU100rM111n': True, 'G101nT103rS110sA116tM105t': True, 'b117ec102er110sb111es114e': False, 'o115dr114ds116em97a': False}
+
 from _1passphraseToPassword import passphraseToPassword
 import re
 

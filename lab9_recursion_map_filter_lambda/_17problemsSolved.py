@@ -1,3 +1,12 @@
+# 17. Write a program to aggregate problem counts and find the category with max solved using reduce.
+# Input: None (data defined in the script)
+# Output:
+#   list: 15
+#   tuple: 14
+#   regex: 9
+#   strings: 11
+#   Max:  list
+
 import functools as f
 solved = {
     "list":[5,4,6],
