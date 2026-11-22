@@ -1,22 +1,20 @@
 # 1. Write a program to record expenses in a CSV file, calculate totals, and handle file and value errors.
-# Input: None (data defined in the script)
+# Input: (expenses.csv 3 17-01-2026 500 17-01-2026 1000 22-02-2026 bad_amount), (exp.csv 1 01-01-2026 200)
 # Output:
 #   Skipping invalid amount 'bad_amount' on date 22-02-2026
 #   Datewise expenses:
 #   17-01-2026: 1500.0
-#   29-01-2026: 200.0
-#   Overall expense: 1850.0
+#   Overall expense: 1500.0
 
 import csv
 
-filename = "expenses.csv"
-sample_data = [
-    ["17-01-2026", "500"],
-    ["17-01-2026", "1000"],
-    ["29-01-2026", "200"],
-    ["22-02-2026", "bad_amount"],
-    ["22-02-2026", "150"]
-]
+filename = input("Enter CSV filename: ")
+n = int(input("Enter number of records: "))
+sample_data = []
+for i in range(n):
+    d = input("Enter date (DD-MM-YYYY): ")
+    amt = input("Enter amount: ")
+    sample_data.append([d, amt])
 
 with open(filename, "w", newline="") as f:
     writer = csv.writer(f)

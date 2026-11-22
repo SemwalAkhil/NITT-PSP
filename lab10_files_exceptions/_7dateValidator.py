@@ -1,5 +1,5 @@
 # 7. Write a program to validate date formats from a file using try-except ValueError and finally block.
-# Input: None (data defined in the script)
+# Input: (dates.txt 4 10-05-2026 29-02-1909 32-07-2006 29-02-2024), (d.txt 1 15-08-2023)
 # Output:
 #   Valid date: 10-05-2026
 #   Invalid date: 29-02-1909
@@ -9,9 +9,11 @@
 
 from datetime import datetime
 
-filename = "dates.txt"
+filename = input("Enter dates filename: ")
+n = int(input("Enter number of dates: "))
 with open(filename, "w") as f:
-    f.write("10-05-2026\n29-02-1909\n32-07-2006\n29-02-2024\n")
+    for i in range(n):
+        f.write(input("Enter date (DD-MM-YYYY): ") + "\n")
 
 f = None
 try:

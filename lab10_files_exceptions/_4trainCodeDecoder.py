@@ -1,5 +1,5 @@
 # 4. Write a program to decode train codes from a file, validate length by raising ValueError, and handle errors.
-# Input: None (data defined in the script)
+# Input: (train_codes.txt 3 MAS-SBC-SERSR-701 SHORT123 NDLSBCT-VE-NR-502), (codes.txt 1 BAD)
 # Output:
 #   Decoded MAS-SBC-SERSR-701: {'source': 'MAS', 'destination': 'SBC', 'type': 'SE', 'zone': 'RSR', 'frequency': '7', 'serial': '01'}
 #   Error decoding 'SHORT123': Invalid code length 8
@@ -17,9 +17,11 @@ def decode_train_code(code: str):
         "serial": code[15:17]
     }
 
-filename = "train_codes.txt"
+filename = input("Enter train codes filename: ")
+n = int(input("Enter number of train codes: "))
 with open(filename, "w") as f:
-    f.write("MAS-SBC-SERSR-701\nSHORT123\nNDLSBCT-VE-NR-502\n")
+    for i in range(n):
+        f.write(input("Enter train code: ") + "\n")
 
 try:
     with open(filename, "r") as f:

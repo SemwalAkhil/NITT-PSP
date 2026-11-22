@@ -1,20 +1,21 @@
 # 5. Write a program to read match statistics from a CSV file, compute top team and player, and save as JSON.
-# Input: None (data defined in the script)
+# Input: (match_data.csv match_result.json 4 CSK "Ruturaj Gaikwad" 45 0 CSK "Deepak Chahar" 4 3 SRH "Travis Head" 89 0 SRH "Pat Cummins" 6 2), (m.csv r.json 1 MI Rohit 50 0)
 # Output: Match result saved to JSON: {'best_player': {'name': 'Travis Head', 'runs': 89}, 'best_team': {'name': 'SRH', 'runs': 95}}
 
 import csv
 import json
 
-csv_file = "match_data.csv"
-json_file = "match_result.json"
+csv_file = input("Enter CSV filename: ")
+json_file = input("Enter JSON output filename: ")
+n = int(input("Enter number of players: "))
 
-sample_data = [
-    ["Team", "Player", "Runs", "Wickets"],
-    ["CSK", "Ruturaj Gaikwad", "45", "0"],
-    ["CSK", "Deepak Chahar", "4", "3"],
-    ["SRH", "Travis Head", "89", "0"],
-    ["SRH", "Pat Cummins", "6", "2"]
-]
+sample_data = [["Team", "Player", "Runs", "Wickets"]]
+for i in range(n):
+    team = input("Enter team: ")
+    player = input("Enter player: ")
+    runs = input("Enter runs: ")
+    wickets = input("Enter wickets: ")
+    sample_data.append([team, player, runs, wickets])
 
 with open(csv_file, "w", newline="") as f:
     writer = csv.writer(f)
