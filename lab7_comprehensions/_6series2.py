@@ -1,3 +1,7 @@
+# 6. Write a program to generate terms of a cubic difference series using list comprehension.
+# Input: (-10 5), (0 4)
+# Output: [-10, -8, 6, 40, 102], [0, 2, 16, 50]
+
 ''' 
 -10 -8  6  40  102
    2  14 34  62

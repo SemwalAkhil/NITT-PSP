@@ -1,3 +1,11 @@
+# 10. Write a program to generate passwords from passphrases using dictionary comprehension.
+# Input: None (data defined in the script)
+# Output:
+#   correct horse battery staple: cT114hE114bY116sE112
+#   ocean breeze mountain silent: oN101bE101mN116sT101
+#   guitar planet velvet shadow: gR116pT110vT118sW100
+#   pencil lantern thunder cookie: pL99lN116tR110
+
 passphrases = [
     "correct horse battery staple",
     "ocean breeze mountain silent",
