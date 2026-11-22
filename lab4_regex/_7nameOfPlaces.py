@@ -1,3 +1,7 @@
+# 7. Write a program to extract institution and place names connected by 'of' using regex.
+# Input: ("State Bank of India"), ("Just A Place")
+# Output: State Bank | India |, Not found
+
 '''
 State Bank of India
 High Court of Himachal Pradesh

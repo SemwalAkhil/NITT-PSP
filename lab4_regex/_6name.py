@@ -1,4 +1,7 @@
-# Mr. R. M. Nandha, Dr. (Mrs.)V. Priyadarshini, Ram Kumar Verma
+# 6. Write a program to extract title and name components from a person's name using regular expressions.
+# Input: ("Dr. (Mrs.) V. Priyadarshini"), ("Ram Kumar Verma")
+# Output: Dr. Mrs. V. Priyadarshini, Ram Kumar Verma
+
 import re
 
 name = input("Enter name: ")

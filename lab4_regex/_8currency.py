@@ -1,3 +1,7 @@
+# 8. Write a program to find all currency amounts in a text string using regular expressions.
+# Input: ("Price is Rs. 500 and Rs. 1000"), ("No currency here")
+# Output: Rs. 500 Rs. 1000, Not found
+
 import re
 
 currency = input("Enter string with currency: ")

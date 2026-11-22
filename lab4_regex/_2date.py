@@ -1,4 +1,10 @@
-# 23/04/1999 or 23-Jan-2021
+# 2. Write a program to extract date, month, and year from a date string using regular expressions.
+# Input: (23/04/1999), (invalid)
+# Output:
+#   Date: 23
+#   Month: 04
+#   Year: 1999
+
 import re
 date = input("Enter date: ")
 match = re.search(

@@ -1,3 +1,7 @@
+# 9. Write a program to check password strength (>=8 chars, upper, lower, digit, special) using regex.
+# Input: (Pass@1234), (weakpass)
+# Output: Strong, Weak
+
 import re
 
 password = input("Enter a password: ")

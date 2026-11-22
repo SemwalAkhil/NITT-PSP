@@ -1,4 +1,10 @@
-# Regular expression for phone number 91-044-1234-5678
+# 1. Write a program to extract country code, area code, and number from a landline number using regex.
+# Input: (91-044-1234-5678), (12-345)
+# Output:
+#   Country Code: 91
+#   Area Code: 044
+#   Number: 1234-5678
+
 import re
 phoneNumber = input("Enter landline number (xx-xxx-xxxx-xxxx): ")
 match = re.search(r"(\d{2})-(\d{3})-(\d{4}-\d{4})", phoneNumber)

@@ -1,3 +1,7 @@
+# 13. Write a program to validate and format a MAC address into two groups using regular expressions.
+# Input: (00:1A:2B:3C:4D:5E), (00:1A:2B:3C:4D:5G)
+# Output: 00:1A:2B 3C:4D:5E, Invalid
+
 '''
 INPUT:  mac(M)                                           00:1A:2B:3C:4D:5E
 OUTPUT: result(R)                                        00:1A:2B 3C:4D:5E

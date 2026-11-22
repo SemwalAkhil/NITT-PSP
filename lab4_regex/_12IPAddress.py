@@ -1,3 +1,7 @@
+# 12. Write a program to validate and extract octets of an IPv4 address using regular expressions.
+# Input: (192.168.1.1), (999.999.999.999)
+# Output: 192 168 1 1, Invalid
+
 import re
 
 ip = input("Enter IPV4 address: ")

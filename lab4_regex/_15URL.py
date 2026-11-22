@@ -1,3 +1,7 @@
+# 15. Write a program to parse a URL into protocol, domain, and path using regular expressions.
+# Input: ("https://example.com/index.html"), (invalid_url)
+# Output: https example.com /index.html, Invalid
+
 '''
 INPUT:  url(U)                                           https://example.com/index.html
 OUTPUT: result(R)                                        https example.com /index.html

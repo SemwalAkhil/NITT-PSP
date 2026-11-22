@@ -1,4 +1,7 @@
-#Vehicle number TN45AB1234
+# 4. Write a program to validate and extract vehicle registration components using regular expressions.
+# Input: (TN45AB1234), (INVALID)
+# Output: TN 45 AB 1234, Not found
+
 import re
 
 text = input("Text: ")

@@ -1,3 +1,7 @@
+# 11. Write a program to validate and extract components of a GSTIN using regular expressions.
+# Input: (22AAAAA0000A1Z5), (INVALIDGST)
+# Output: 22 AAAAA0000A 1 5, Invalid
+
 import re
 
 gst_num = input("Enter GST number: ")

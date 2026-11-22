@@ -1,3 +1,7 @@
+# 14. Write a program to validate and format an IFSC code using regular expressions.
+# Input: (SBIN0001234), (SBIN1001234)
+# Output: SBIN 0001234, Invalid
+
 '''
 INPUT:  ifsc(I)                                          SBIN0001234
 OUTPUT: result(R)                                        SBIN 0001234

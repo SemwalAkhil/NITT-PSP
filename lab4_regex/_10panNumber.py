@@ -1,3 +1,7 @@
+# 10. Write a program to validate and extract components of a PAN card number using regular expressions.
+# Input: (ABCPA1234F), (INVALID123)
+# Output: ABC P A 1234 F, Invalid
+
 import re
 
 pan_num = input("Enter pan number: ")
