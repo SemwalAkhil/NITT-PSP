@@ -1,3 +1,14 @@
+# 12. Write a program to group and display system logs category-wise and hour-wise using tuples and lists.
+# Input: None (data defined in the script)
+# Output:
+#   Category-wise logs:
+#   normal:
+#   ('09:15', 'normal', 'Started')
+#   ('10:10', 'normal', 'User login')
+#   Hour-wise logs:
+#   09:00
+#   ('09:15', 'normal', 'Started')
+
 logs = [
     ("09:15", "normal", "Started"),
     ("09:30", "critical", "Disk full"),

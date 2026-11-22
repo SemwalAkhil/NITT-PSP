@@ -1,3 +1,12 @@
+# 10. Write a program to add a new expense entry to a list and compute datewise and overall expenses.
+# Input: (04-10-2026 400), (01-10-2026 200)
+# Output:
+#   01-10-2026 : 800
+#   02-10-2026 : 900
+#   03-10-2026 : 1000
+#   04-10-2026 : 400
+#   Overall expense: 3100
+
 expenses = [
     '01-10-2026', 500,
     '01-10-2026', 300,

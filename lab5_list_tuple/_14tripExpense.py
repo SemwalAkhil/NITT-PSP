@@ -1,3 +1,11 @@
+# 14. Write a program to calculate individual trip balances and settle debts among travelers.
+# Input: None (data defined in the script)
+# Output:
+#   Total expense: 900
+#   Share per person: 300.0
+#   Average amount paid: 300.0
+#   C owes A : 200.0
+
 payments = (("A", 500), ("B", 300), ("C", 100))
 total = 0
 

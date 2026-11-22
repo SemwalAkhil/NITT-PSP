@@ -1,3 +1,14 @@
+# 13. Write a program to compute stock-wise, date-wise, and overall profit/loss from investment records.
+# Input: None (data defined in the script)
+# Output:
+#   Stock-wise P/L:
+#   Birla Cements : 0
+#   TCS : 100
+#   Date-wise P/L:
+#   25-9-2026 : 0
+#   26-9-2026 : 100
+#   Overall P/L: 100
+
 investments = [
     ('25-9-2026', 'Birla Cements', 500, 400),
     ('25-9-2026', 'TCS', 300, 400),

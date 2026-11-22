@@ -1,3 +1,13 @@
+# 7. Write a program to perform matrix addition, subtraction, multiplication, division, trace, and transpose.
+# Input: None (data defined in the script)
+# Output:
+#   Addition:
+#   [6, 8]
+#   [10, 12]
+#   Subtraction:
+#   [-4, -4]
+#   [-4, -4]
+
 A = [[1, 2], [3, 4]]
 B = [[5, 6], [7, 8]]
 

@@ -1,3 +1,9 @@
+# 2. Write a program to fill empty spaces (1s) in a block list with occupied markers (0s).
+# Input: (2), (3)
+# Output:
+#   [0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0]
+#   [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0]
+
 blocks = [0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0]
 
 print(blocks)

@@ -1,3 +1,7 @@
+# 3. Write a program to filter and print valid calendar dates from a list of date strings.
+# Input: None (data defined in the script)
+# Output: 10-05-2026
+
 import re
 
 dates = ["10-05-2026", "29-02-1909", "32-07-2006", "10-3-2003"]

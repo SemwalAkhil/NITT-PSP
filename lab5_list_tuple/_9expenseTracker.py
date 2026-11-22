@@ -1,3 +1,11 @@
+# 9. Write a program to compute datewise and overall expenses from a flattened expense list.
+# Input: None (data defined in the script)
+# Output:
+#   01-10-2026 : 800
+#   02-10-2026 : 900
+#   03-10-2026 : 1000
+#   Overall expense: 2700
+
 expenses = [
     '01-10-2026', 500,
     '01-10-2026', 300,
