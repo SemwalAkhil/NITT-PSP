@@ -1,12 +1,19 @@
-# 14. Write a program to calculate individual trip balances and settle debts among travelers.
-# Input: None (data defined in the script)
+# 14. Write a program to read trip payments from the user, calculate individual balances, and settle debts among travelers.
+# Input: (3 A 500 B 300 C 100), (2 Alice 200 Bob 100)
 # Output:
 #   Total expense: 900
 #   Share per person: 300.0
 #   Average amount paid: 300.0
 #   C owes A : 200.0
 
-payments = (("A", 500), ("B", 300), ("C", 100))
+n = int(input("Enter number of people: "))
+temp_payments = []
+for i in range(n):
+    name = input("Enter name: ")
+    amt = float(input("Enter amount paid: "))
+    temp_payments.append((name, amt))
+payments = tuple(temp_payments)
+
 total = 0
 
 for person in payments:

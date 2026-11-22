@@ -1,5 +1,5 @@
-# 13. Write a program to compute stock-wise, date-wise, and overall profit/loss from investment records.
-# Input: None (data defined in the script)
+# 13. Write a program to read investment records from the user and compute stock-wise, date-wise, and overall profit/loss.
+# Input: (3 25-9-2026 "Birla Cements" 500 400 25-9-2026 TCS 300 400 26-9-2026 "Birla Cements" 600 700), (1 10-10-2026 Infosys 200 250)
 # Output:
 #   Stock-wise P/L:
 #   Birla Cements : 0
@@ -9,11 +9,14 @@
 #   26-9-2026 : 100
 #   Overall P/L: 100
 
-investments = [
-    ('25-9-2026', 'Birla Cements', 500, 400),
-    ('25-9-2026', 'TCS', 300, 400),
-    ('26-9-2026', 'Birla Cements', 600, 700)
-]
+n = int(input("Enter number of investments: "))
+investments = []
+for i in range(n):
+    d = input("Enter date (DD-MM-YYYY): ")
+    st = input("Enter stock name: ")
+    buy = int(input("Enter buy price: "))
+    sell = int(input("Enter sell price: "))
+    investments.append((d, st, buy, sell))
 
 stocks = ()
 dates = ()

@@ -1,18 +1,18 @@
-# 9. Write a program to compute datewise and overall expenses from a flattened expense list.
-# Input: None (data defined in the script)
+# 9. Write a program to read expenses from the user and compute datewise and overall expenses.
+# Input: (5 01-10-2026 500 01-10-2026 300 02-10-2026 700 02-10-2026 200 03-10-2026 1000), (2 01-10-2026 400 02-10-2026 600)
 # Output:
 #   01-10-2026 : 800
 #   02-10-2026 : 900
 #   03-10-2026 : 1000
 #   Overall expense: 2700
 
-expenses = [
-    '01-10-2026', 500,
-    '01-10-2026', 300,
-    '02-10-2026', 700,
-    '02-10-2026', 200,
-    '03-10-2026', 1000
-]
+n = int(input("Enter number of expenses: "))
+expenses = []
+for i in range(n):
+    d = input("Enter date (DD-MM-YYYY): ")
+    amt = int(input("Enter amount: "))
+    expenses.append(d)
+    expenses.append(amt)
 
 dates = []
 total = 0

@@ -1,5 +1,5 @@
-# 10. Write a program to add a new expense entry to a list and compute datewise and overall expenses.
-# Input: (04-10-2026 400), (01-10-2026 200)
+# 10. Write a program to read previous expenses, add a new expense entry, and compute datewise and overall expenses.
+# Input: (5 01-10-2026 500 01-10-2026 300 02-10-2026 700 02-10-2026 200 03-10-2026 1000 04-10-2026 400), (1 01-10-2026 500 01-10-2026 200)
 # Output:
 #   01-10-2026 : 800
 #   02-10-2026 : 900
@@ -7,13 +7,13 @@
 #   04-10-2026 : 400
 #   Overall expense: 3100
 
-expenses = [
-    '01-10-2026', 500,
-    '01-10-2026', 300,
-    '02-10-2026', 700,
-    '02-10-2026', 200,
-    '03-10-2026', 1000
-]
+n = int(input("Enter number of previous expenses: "))
+expenses = []
+for i in range(n):
+    d = input("Enter date (DD-MM-YYYY): ")
+    amt = int(input("Enter amount: "))
+    expenses.append(d)
+    expenses.append(amt)
 
 date = input("Date: ")
 amount = int(input("Amount: "))

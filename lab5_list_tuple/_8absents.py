@@ -1,13 +1,19 @@
-# 8. Write a program to track absent students per date and total absences per roll number from attendance data.
-# Input: None (data defined in the script)
+# 8. Write a program to read attendance data from the user and track absent students per date and total absences per roll number.
+# Input: (3 25-9-2026 "51 101 67" 26-9-2026 "51 101 68 59" 27-9-2026 "101 51 28 65"), (2 01-10-2026 "10 20" 02-10-2026 "20 30")
 # Output:
 #   Absent students on 25-9-2026: 51 101 67 
 #   Absent students on 26-9-2026: 51 101 68 59 
 #   Total classes absent by roll no 51: 3
 #   Total classes absent by roll no 101: 3
 
-data = ['25-9-2026', 51, 101, 67, '26-9-2026', 51, 101, 68, 59,
-        '27-9-2026', 101, 51, 28, 65]
+n = int(input("Enter number of days: "))
+data = []
+for i in range(n):
+    d = input("Enter date (DD-MM-YYYY): ")
+    data.append(d)
+    abs_rolls = input("Enter absent roll numbers: ").split()
+    for r in abs_rolls:
+        data.append(int(r))
 
 rolls = []
 

@@ -1,5 +1,5 @@
-# 12. Write a program to group and display system logs category-wise and hour-wise using tuples and lists.
-# Input: None (data defined in the script)
+# 12. Write a program to read system logs from the user and display them category-wise and hour-wise using tuples and lists.
+# Input: (5 09:15 normal Started 09:30 critical "Disk full" 10:10 normal "User login" 10:45 critical "System error" 09:50 warning "High memory"), (2 08:00 normal Login 09:00 warning High-RAM)
 # Output:
 #   Category-wise logs:
 #   normal:
@@ -9,13 +9,13 @@
 #   09:00
 #   ('09:15', 'normal', 'Started')
 
-logs = [
-    ("09:15", "normal", "Started"),
-    ("09:30", "critical", "Disk full"),
-    ("10:10", "normal", "User login"),
-    ("10:45", "critical", "System error"),
-    ("09:50", "warning", "High memory")
-]
+n = int(input("Enter number of logs: "))
+logs = []
+for i in range(n):
+    t = input("Enter time (HH:MM): ")
+    cat = input("Enter category: ")
+    msg = input("Enter message: ")
+    logs.append((t, cat, msg))
 
 categories = ("normal", "warning", "critical")
 
