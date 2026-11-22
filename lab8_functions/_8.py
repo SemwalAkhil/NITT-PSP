@@ -1,6 +1,6 @@
 # 8. Write a function to rephrase a sentence by replacing words with their synonyms from a dictionary.
-# Input: sent="the quick dog jumped over the lazy fox", syns={"quick": ["fast"], "lazy": ["idle"]}
-# Output: the fast dog jumped over the idle fox
+# Input: ("the quick dog jumped over the lazy fox" 2 quick fast lazy idle), ("a good day" 1 good great)
+# Output: the fast dog jumped over the idle fox, a great day
 
 def rephraseSentence(sentence: str, synonyms: dict):
     words = sentence.split()
@@ -13,6 +13,11 @@ def rephraseSentence(sentence: str, synonyms: dict):
     return " ".join(new_words)
 
 if __name__ == "__main__":
-    syns = {"quick": ["fast", "rapid"], "lazy": ["idle", "sluggish"]}
-    sent = "the quick dog jumped over the lazy fox"
+    sent = input("Enter sentence: ")
+    n_words = int(input("Enter number of synonym words: "))
+    syns = {}
+    for i in range(n_words):
+        word = input("Enter word: ")
+        syn_list = input(f"Enter synonyms for {word}: ").split()
+        syns[word] = syn_list
     print(rephraseSentence(sent, syns))

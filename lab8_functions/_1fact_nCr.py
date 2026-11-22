@@ -1,5 +1,5 @@
 # 1. Write functions to calculate the factorial of a number and nCr (combinations).
-# Input: n=5, r=2
+# Input: (5 2), (6 3)
 # Output:
 #   Factorial 5: 120
 #   nCr 5C2: 10
@@ -17,7 +17,7 @@ def ncr(n,r):
         return 0
 
 if __name__ == "__main__":
-    n = 5
-    r = 2
+    n = int(input("Enter n: "))
+    r = int(input("Enter r: "))
     print(f"Factorial {n}: {factorial(n)}")
     print(f"nCr {n}C{r}: {ncr(n,r)}")
