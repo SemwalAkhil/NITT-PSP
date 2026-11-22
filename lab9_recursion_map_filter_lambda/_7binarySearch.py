@@ -1,5 +1,5 @@
 # 7. Write a program to search for a target value in a sorted list using recursive binary search.
-# Input: (40), (99)
+# Input: ("10 20 30 40 50 60 70" 40), ("10 20 30" 99)
 # Output: Found at index:  3, Not found
 
 def binarySearch(arr: list, low: int, high: int, target):
@@ -14,7 +14,7 @@ def binarySearch(arr: list, low: int, high: int, target):
         return binarySearch(arr, mid + 1, high, target)
 
 if __name__ == "__main__":
-    nums = [10, 20, 30, 40, 50, 60, 70]
+    nums = [int(x) for x in input("Enter sorted elements: ").split()]
     target = int(input("Enter element to search: "))
     idx = binarySearch(nums, 0, len(nums) - 1, target)
     if idx != -1:

@@ -1,6 +1,6 @@
 # 2. Write a program to evaluate password strengths into a dictionary using map and lambda.
-# Input: None (data defined in the script)
-# Output: {'c112tl109nt115y': False, 'T98eF99nM114rC111d': True, 'P97eE116sL109nU100rM111n': True, 'G101nT103rS110sA116tM105t': True, 'b117ec102er110sb111es114e': False, 'o115dr114ds116em97a': False}
+# Input: (2 "carpet lemon thursday" "Table Falcon Mirror Cloud"), (1 "weakpass")
+# Output: {'c112tl109nt115y': False, 'T98eF99nM114rC111d': True}, {'weakpass': False}
 
 from _1passphraseToPassword import passphraseToPassword
 import re
@@ -12,6 +12,8 @@ def checkPass(password:str):
     return False
 
 if __name__ == "__main__":
-    passwords = passphraseToPassword()
+    n = int(input("Enter number of passphrases: "))
+    p_list = [input(f"Enter passphrase {i+1}: ") for i in range(n)]
+    passwords = passphraseToPassword(p_list)
     pass_strength = dict(map(lambda p: (p, checkPass(p)), passwords))
     print(pass_strength)
