@@ -1,3 +1,11 @@
+# 13. Write a program to print an inverted right-angled number triangle with leading spaces.
+# Input: None (data defined in the script)
+# Output:
+#   4 3 2 1
+#     3 2 1
+#       2 1
+#         1
+
 '''
 4 3 2 1
   3 2 1

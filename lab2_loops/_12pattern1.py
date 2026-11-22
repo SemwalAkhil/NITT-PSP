@@ -1,3 +1,11 @@
+# 12. Write a program to print a right-angled decreasing number triangle pattern.
+# Input: None (data defined in the script)
+# Output:
+#   1 2 3 4
+#   1 2 3
+#   1 2
+#   1
+
 '''
 1 2 3 4
 1 2 3

@@ -1,3 +1,10 @@
+# 9. Write a program to print a number pyramid pattern for N rows.
+# Input: (3), (4)
+# Output:
+#     1
+#    1 2
+#   1 2 3
+
 '''
    1
   1 2

@@ -1,3 +1,7 @@
+# 1. Write a program to calculate the Taylor series expansion of sin(x) using loops.
+# Input: (30), (90)
+# Output: MY = 0.500000, MY = 1.000000
+
 from math import factorial, radians, fabs, sin
 
 # sum (-1)^(n-1) * x ^ (2n-1) / (2n - 1)!

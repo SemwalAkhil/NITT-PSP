@@ -1,3 +1,7 @@
+# 19. Write a program to find the Nth Armstrong number using loops.
+# Input: (5), (10)
+# Output: 5 armstrong number is : 5, 10 armstrong number is : 153
+
 num: int = int(input("Enter N: "))
 counter: int = 0
 check: int = 1

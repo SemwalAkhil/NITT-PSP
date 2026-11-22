@@ -1,3 +1,7 @@
+# 4. Write a program to calculate the log expansion of ln(1+x) using loops.
+# Input: (0.5), (0.2)
+# Output: MY = 0.405465, MY = 0.182322
+
 from math import log, fabs
 # ln(1+x) = x - x^2/2 + x^3/3 - ...
 

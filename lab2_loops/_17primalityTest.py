@@ -1,3 +1,7 @@
+# 17. Write a program to check if a number is prime using a for-else loop.
+# Input: (11), (12)
+# Output: Prime, Not prime
+
 '''
 check if a number is prime
 '''

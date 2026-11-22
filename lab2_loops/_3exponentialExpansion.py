@@ -1,3 +1,7 @@
+# 3. Write a program to calculate the Taylor series expansion of e^x using loops.
+# Input: (1), (2)
+# Output: MY = 2.718282, MY = 7.389056
+
 from math import factorial, exp, fabs
 # sum (x^n/n!) = e^x
 

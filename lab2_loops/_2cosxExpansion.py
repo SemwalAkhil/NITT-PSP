@@ -1,3 +1,7 @@
+# 2. Write a program to calculate the Taylor series expansion of cos(x) using loops.
+# Input: (60), (0)
+# Output: MY = 0.500000, MY = 1.000000
+
 from math import factorial, radians, fabs, cos
 # sum (-1)^(n) * x ^ (2n) / (2n)!
 
