@@ -1,3 +1,7 @@
+# 14. Write a program to calculate the electricity bill based on usage and consumer category.
+# Input: (100 residential), (200 commercial)
+# Output: Amount to pay: Rs.  600.0, Amount to pay: Rs.  2000.0
+
 usage = float(input("Enter usage (KWh): "))
 print('''Valid category's
 Residential

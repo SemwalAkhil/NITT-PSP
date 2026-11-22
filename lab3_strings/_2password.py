@@ -1,3 +1,7 @@
+# 2. Write a program to generate a password from blood group, birth date, and phone number.
+# Input: (O+ 15/08/2000 9876543210), (A+ 01/01/2005 9123456789)
+# Output: OAUG15210, AJAN1789
+
 import datetime
 
 

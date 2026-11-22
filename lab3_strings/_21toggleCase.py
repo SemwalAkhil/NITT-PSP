@@ -1,4 +1,6 @@
-# toggleCase of a string
+# 21. Write a program to toggle the case of each character in a given string.
+# Input: ("Hello World"), ("PyThOn 123")
+# Output: hELLO wORLD, pYtHoN 123
 
 string = input("Enter string: ")
 returnString = ""

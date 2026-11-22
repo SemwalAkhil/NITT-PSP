@@ -1,3 +1,7 @@
+# 13. Write a program to identify the gas contained in a cylinder given its color code.
+# Input: (red), (white)
+# Output: Hydrogen, Oxygen
+
 print("""Valid colors:
 Red
 Yellow

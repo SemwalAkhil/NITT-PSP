@@ -1,3 +1,7 @@
+# 10. Write a program to convert a binary string (including fractional part) to hexadecimal.
+# Input: (1101.101), (1111)
+# Output: Hex representation is:  D.A, Hex representation is:  F
+
 string = input("Enter binary: ").strip().strip(".").split(".")
 
 left = string[0]

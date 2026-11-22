@@ -1,3 +1,7 @@
+# 4. Write a program to merge two strings by alternating their characters.
+# Input: (abc def), (hello 123456)
+# Output: adbecf, h1e2l3l4o56
+
 string1 = input("Enter string 1: ")
 len1 = len(string1) - 1
 string2 = input("Enter string 2: ")

@@ -1,3 +1,7 @@
+# 3. Write a program to encrypt and decrypt a string using the Atbash cipher.
+# Input: ("Hello World!"), ("Attack at Dawn")
+# Output: Encrypted String:  Svool Dliow!, Encrypted String:  Zggzxp zg Wzdm
+
 def encrypt(string):
     res = ""
     for char in string:

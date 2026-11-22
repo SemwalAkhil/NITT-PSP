@@ -1,3 +1,7 @@
+# 12. Write a program to generate a password from a passphrase using character transformations.
+# Input: ("hello world"), ("good morning")
+# Output: Password is:  O104bD119h, Password is:  D103eG109d
+
 inputStr = input("Enter pass phrase: ")
 words = inputStr.split()
 passw = ""

@@ -1,3 +1,7 @@
+# 7. Write a program to find the largest common prefix of two strings.
+# Input: (flower flow), (dog racecar)
+# Output: Largest common prefix:  flow, Largest common prefix:
+
 string1 = input("Enter string1: ")
 string2 = input("Enter string2: ")
 

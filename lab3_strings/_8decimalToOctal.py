@@ -1,3 +1,7 @@
+# 8. Write a program to convert a decimal number (including fractional part) to octal.
+# Input: (10.5), (25)
+# Output: Octal value is: 12.4, Octal value is: 31.
+
 in_value = input("Enter a decimal number: ").split(".")
 integer = in_value[0]
 if len(in_value) == 2:

@@ -1,3 +1,7 @@
+# 9. Write a program to convert a binary string (including fractional part) to octal.
+# Input: (1101.101), (111)
+# Output: Octal representation is:  15.5, Octal representation is:  7
+
 string = input("Enter binary: ").strip().strip(".").split(".")
 
 left = string[0]

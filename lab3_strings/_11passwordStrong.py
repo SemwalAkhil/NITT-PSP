@@ -1,3 +1,7 @@
+# 11. Write a program to check if a password is strong (has length >= 8, uppercase, lowercase, digit).
+# Input: (Abcdef1), (Abcdefg1)
+# Output: Strong password:  False, Strong password:  True
+
 strong = False
 string = input("Enter password: ")
 if len(string) >= 8:
