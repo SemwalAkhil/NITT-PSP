@@ -1,3 +1,7 @@
+# 15. Write a program to calculate age in years, months, and days from date of birth.
+# Input: (15-08-2000), (01-01-2010)
+# Output: Age is : 26 years 3 months 7 days (depends on today's date), Age is : 16 years 10 months 21 days (depends on today's date)
+
 """
 Read dob
 diff<-dob-today

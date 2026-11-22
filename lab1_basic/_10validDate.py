@@ -1,3 +1,7 @@
+# 10. Write a program to check if a given date (DD MM YYYY) is valid.
+# Input: (29 2 2024), (31 4 2023)
+# Output: Valid Date, Invalid Date
+
 '''
 Read D,M,Y
 If D < 1 or D > 31 or M < 1 or M > 12 do

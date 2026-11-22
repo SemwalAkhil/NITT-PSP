@@ -1,3 +1,7 @@
+# 16. Write a program to calculate the average of passing marks (>= 40) for a given list of students.
+# Input: ("35 45 60 20 80"), ("30 25 39")
+# Output: Average of passing marks:  61.666666666666664, No passing students
+
 marks = input("Enter marks of students: ").split()
 total = 0
 count = 0

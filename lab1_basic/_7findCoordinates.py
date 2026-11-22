@@ -1,3 +1,7 @@
+# 7. Write a program to find the quadrant or axis of a given coordinate point (x, y).
+# Input: (5 -3), (-2 4)
+# Output: Quadrant IV, Quadrant II
+
 x = float(input("Enter x coordinate: "))
 y = float(input("Enter y coordinate: "))
 

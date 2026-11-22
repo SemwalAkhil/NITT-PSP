@@ -1,3 +1,7 @@
+# 3. Write a program to determine the size of the address bus for given RAM size and word length.
+# Input: (4 4), (8 2)
+# Output: Size of address bus:  30  bits, Size of address bus:  32  bits
+
 """
 Read ram, word
 address <- (ram * 2 ^ 9) / word

@@ -1,3 +1,7 @@
+# 2. Write a program to calculate CPU clock cycles for a given frequency and units.
+# Input: (M 2.5), (G 1.2)
+# Output: 2500000 cycles, 1200000000 cycles
+
 """
 Read frequency, units
 frequency <- frequency.first_char.lower_char
