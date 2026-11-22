@@ -1,19 +1,13 @@
-# 9. Write a program to group expenses datewise into a dictionary using list comprehension.
-# Input: None (data defined in the script)
-# Output: {'01-02-2026': [500, 100], '03-02-2026': [1500], '05-02-2026': [200], '06-02-2026': [350], '10-02-2026': [1200], '14-02-2026': [50, 450], '20-02-2026': [80], '25-02-2026': [2100]}
+# 9. Write a program to read expenses from the user and group them datewise into a dictionary using list comprehension.
+# Input: (5 01-02-2026 500 03-02-2026 1500 01-02-2026 100 05-02-2026 200 06-02-2026 350), (2 01-01-2026 100 01-01-2026 200)
+# Output: {'01-02-2026': [500, 100], '03-02-2026': [1500], '05-02-2026': [200], '06-02-2026': [350]}, {'01-01-2026': [100, 200]}
 
-exp_list = [
-    "01-02-2026", 500,
-    "03-02-2026", 1500,
-    "01-02-2026", 100,
-    "05-02-2026", 200,
-    "06-02-2026", 350,
-    "10-02-2026", 1200,
-    "14-02-2026", 50,
-    "14-02-2026", 450,
-    "20-02-2026", 80,
-    "25-02-2026", 2100
-]
+n = int(input("Enter number of expenses: "))
+exp_list = []
+for i in range(n):
+    d = input("Enter date (DD-MM-YYYY): ")
+    amt = int(input("Enter amount: "))
+    exp_list.extend([d, amt])
 
 exp_dict = {}
 exp_dict = {
