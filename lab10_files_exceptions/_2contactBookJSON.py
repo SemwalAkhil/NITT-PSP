@@ -1,3 +1,10 @@
+# 2. Write a program to store and load a contact book using JSON format with file and decode error handling.
+# Input: None (data defined in the script)
+# Output:
+#   Loaded contacts:
+#   Name: Akhil, Email: akhil@example.com, Phone: 9876543210
+#   Name: Rahul, Email: rahul@example.com, Phone: 9123456780
+
 import json
 
 filename = "contacts.json"

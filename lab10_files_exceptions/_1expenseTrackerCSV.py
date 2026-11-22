@@ -1,3 +1,12 @@
+# 1. Write a program to record expenses in a CSV file, calculate totals, and handle file and value errors.
+# Input: None (data defined in the script)
+# Output:
+#   Skipping invalid amount 'bad_amount' on date 22-02-2026
+#   Datewise expenses:
+#   17-01-2026: 1500.0
+#   29-01-2026: 200.0
+#   Overall expense: 1850.0
+
 import csv
 
 filename = "expenses.csv"

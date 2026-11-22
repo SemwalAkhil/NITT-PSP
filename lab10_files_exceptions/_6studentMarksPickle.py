@@ -1,3 +1,11 @@
+# 6. Write a program to serialize and deserialize student marks using pickle and compute percentages.
+# Input: None (data defined in the script)
+# Output:
+#   Student Percentages:
+#   Roll 1: 60.00%
+#   Roll 2: 60.00%
+#   Roll 3: 32.50%
+
 import pickle
 
 filename = "marks.dat"

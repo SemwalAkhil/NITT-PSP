@@ -1,3 +1,7 @@
+# 5. Write a program to read match statistics from a CSV file, compute top team and player, and save as JSON.
+# Input: None (data defined in the script)
+# Output: Match result saved to JSON: {'best_player': {'name': 'Travis Head', 'runs': 89}, 'best_team': {'name': 'SRH', 'runs': 95}}
+
 import csv
 import json
 

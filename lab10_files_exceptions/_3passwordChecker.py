@@ -1,3 +1,12 @@
+# 3. Write a program to read passwords from a text file, check strength, and write a report to another file.
+# Input: None (data defined in the script)
+# Output:
+#   Report written to password_report.txt:
+#   Pass@1234: Strong
+#   weakpass: Weak
+#   Secure#99: Strong
+#   12345: Weak
+
 import re
 
 def is_strong(password: str):

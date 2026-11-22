@@ -1,3 +1,12 @@
+# 7. Write a program to validate date formats from a file using try-except ValueError and finally block.
+# Input: None (data defined in the script)
+# Output:
+#   Valid date: 10-05-2026
+#   Invalid date: 29-02-1909
+#   Invalid date: 32-07-2006
+#   Valid date: 29-02-2024
+#   File closed successfully in finally block
+
 from datetime import datetime
 
 filename = "dates.txt"
