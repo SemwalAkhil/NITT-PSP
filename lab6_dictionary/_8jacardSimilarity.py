@@ -1,25 +1,25 @@
-# 8. Write a program to compute Jaccard similarity and in/out degrees of nodes in a directed graph.
-# Input: None (data defined in the script)
+# 8. Write a program to read a graph from the user and compute Jaccard similarity and in/out degrees of nodes.
+# Input: (6 A "B C" B "A D E" C A D B E "B D" F "C A"), (3 1 "2 3" 2 3 3 1)
 # Output:
 #   A: OUT: 2 IN: 3
 #   B: OUT: 3 IN: 3
 #   C: OUT: 1 IN: 2
 
-graph = {
-    "A": ["B", "C"],
-    "B": ["A", "D", "E"],
-    "C": ["A"],
-    "D": ["B"],
-    "E": ["B","D"],
-    "F": ["C","A"]
-}
+num_nodes = int(input("Enter number of nodes: "))
+graph = {}
+for i in range(num_nodes):
+    node = input("Enter node name: ")
+    nbrs = input(f"Enter neighbours of {node}: ").split()
+    graph[node] = nbrs
+
 degrees = {node:[0,0] for node in graph.keys()}
 similarity = {}
 
 for node,others in graph.items():
     degrees[node][0] = len(others) 
     for other in others:
-        degrees[other][1] += 1
+        if other in degrees:
+            degrees[other][1] += 1
 
 for node,degree in degrees.items():
     print(f"{node}: OUT: {degree[0]} IN: {degree[1]}")
@@ -33,5 +33,3 @@ for node1 in graph:
             union = list(nbr1.union(nbr2))
             jacard = len(inter)/len(union) if len(union) > 0 else 0.0
             similarity[f"{node1}-{node2}"] = (inter,union,jacard)
-
-print(similarity)

@@ -1,18 +1,17 @@
-# 6. Write a program to calculate datewise and monthwise expense totals from a dictionary of expenses.
-# Input: None (data defined in the script)
+# 6. Write a program to read expenses from the user and calculate datewise and monthwise expense totals.
+# Input: (6 17-01-2026 "500 1000 2000" 29-01-2026 "100 200" 22-02-2026 "50 50" 04-03-2026 "100 100" 05-04-2026 "50 2000" 06-04-2026 "400 1600"), (2 01-01-2026 "100 200" 02-02-2026 "300")
 # Output:
 #   17-01-2026: 3500
 #   29-01-2026: 300
 #   {'01': 3800, '02': 100, '03': 200, '04': 4050}
 
-expenses = {
-    "17-01-2026":[500,1000,2000],
-    "29-01-2026":[100,200],
-    "22-02-2026":[50,50],
-    "04-03-2026":[100,100],
-    "05-04-2026":[50,2000],
-    "06-04-2026":[400,1600],
-}
+n = int(input("Enter number of dates: "))
+expenses = {}
+for i in range(n):
+    d = input("Enter date (DD-MM-YYYY): ")
+    amts = [int(x) for x in input("Enter expense amounts: ").split()]
+    expenses[d] = amts
+
 total_per_date = {
     date:0 for date in expenses.keys()
 }
