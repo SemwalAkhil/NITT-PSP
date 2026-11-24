@@ -1,10 +1,16 @@
-# 16. Write a program to decode roll number into degree level, department, year, and sequence number.
+# 16. Write a program to display details of a student by decoding the roll number.
 # Input: (205126009), (105125010)
 # Output:
+#   Run 1:
 #   Type      : PG
 #   Department: Computer Applications
 #   Year      : 2026
 #   Sequence  : 009
+#   Run 2:
+#   Type      : UG
+#   Department: Computer Applications
+#   Year      : 2025
+#   Sequence  : 010
 
 roll = input("Enter roll number: ")
 if roll[:1] == "1":

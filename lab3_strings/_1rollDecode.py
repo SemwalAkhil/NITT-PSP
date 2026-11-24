@@ -1,10 +1,16 @@
-# 1. Write a program to decode a nine-digit roll number into level, department, year, and sequence.
+# 1. Write a program to decode a 9-digit roll number into level, department, year, and sequence.
 # Input: (205126009), (101124015)
 # Output:
+#   Run 1:
 #   Level: PG
 #   Department: Computer Applications
 #   Year of Admission: 2026
 #   Sequence Number:  009
+#   Run 2:
+#   Level: UG
+#   Department: Architecture
+#   Year of Admission: 2024
+#   Sequence Number:  015
 
 R = input("Enter a nine digit roll number: ")
 
