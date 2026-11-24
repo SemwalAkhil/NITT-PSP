@@ -1,11 +1,15 @@
-# 10. Write a program to read previous expenses, add a new expense entry, and compute datewise and overall expenses.
+# 10. Write a program to update an existing expense log with new entries and calculate totals.
 # Input: (5 01-10-2026 500 01-10-2026 300 02-10-2026 700 02-10-2026 200 03-10-2026 1000 04-10-2026 400), (1 01-10-2026 500 01-10-2026 200)
 # Output:
+#   Run 1:
 #   01-10-2026 : 800
 #   02-10-2026 : 900
 #   03-10-2026 : 1000
 #   04-10-2026 : 400
 #   Overall expense: 3100
+#   Run 2:
+#   01-10-2026 : 700
+#   Overall expense: 700
 
 n = int(input("Enter number of previous expenses: "))
 expenses = []

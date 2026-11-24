@@ -1,8 +1,12 @@
-# 2. Write a program to fill empty spaces (1s) in a block list with occupied markers (0s).
+# 2. Write a program to allocate contiguous blocks in a 0-1 list and print the resulting list.
 # Input: (2), (3)
 # Output:
+#   Run 1:
 #   [0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0]
 #   [0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0]
+#   Run 2:
+#   [0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0]
+#   [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0]
 
 blocks = [0, 1, 0, 0, 1, 0, 1, 0, 0, 0, 1, 0, 0, 1, 0, 1, 0, 0]
 

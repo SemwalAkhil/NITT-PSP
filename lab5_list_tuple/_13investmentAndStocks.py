@@ -1,6 +1,7 @@
-# 13. Write a program to read investment records from the user and compute stock-wise, date-wise, and overall profit/loss.
+# 13. Write a program to track stock transactions and calculate stock-wise, date-wise, and total profit/loss.
 # Input: (3 25-9-2026 "Birla Cements" 500 400 25-9-2026 TCS 300 400 26-9-2026 "Birla Cements" 600 700), (1 10-10-2026 Infosys 200 250)
 # Output:
+#   Run 1:
 #   Stock-wise P/L:
 #   Birla Cements : 0
 #   TCS : 100
@@ -8,6 +9,12 @@
 #   25-9-2026 : 0
 #   26-9-2026 : 100
 #   Overall P/L: 100
+#   Run 2:
+#   Stock-wise P/L:
+#   Infosys : 50
+#   Date-wise P/L:
+#   10-10-2026 : 50
+#   Overall P/L: 50
 
 n = int(input("Enter number of investments: "))
 investments = []

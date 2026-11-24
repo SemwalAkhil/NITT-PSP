@@ -1,10 +1,16 @@
-# 14. Write a program to read trip payments from the user, calculate individual balances, and settle debts among travelers.
+# 14. Write a program to split trip expenses among friends and calculate who owes whom.
 # Input: (3 A 500 B 300 C 100), (2 Alice 200 Bob 100)
 # Output:
+#   Run 1:
 #   Total expense: 900
 #   Share per person: 300.0
 #   Average amount paid: 300.0
 #   C owes A : 200.0
+#   Run 2:
+#   Total expense: 300.0
+#   Share per person: 150.0
+#   Average amount paid: 150.0
+#   Bob owes Alice : 50.0
 
 n = int(input("Enter number of people: "))
 temp_payments = []
