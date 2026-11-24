@@ -11,5 +11,5 @@ no_stops = lambda t: [w for w in t.split() if w not in {"is", "the", "a", "at"}]
 
 preprocess = compose(lower, no_url, no_tags, only_alpha, no_stops)
 
-tweet = "@dev Python is the best!! Check https://python.org "
-print(preprocess(tweet))  
+tweet = input("Enter tweet: ")
+print(preprocess(tweet))

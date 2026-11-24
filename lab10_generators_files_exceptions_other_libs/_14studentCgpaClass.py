@@ -13,8 +13,12 @@ class Student:
         creds = sum(c for c, _ in self.subs)
         return round(pts / creds, 2) if creds else 0.0
 
-
-s = Student("Rahul", 101)
-s.add_sub(4, "O")
-s.add_sub(3, "A")
-print(s.name, "CGPA:", s.cgpa()) 
+name = input("Enter name: ")
+roll = int(input("Enter roll number: "))
+s = Student(name, roll)
+n = int(input("Enter number of subjects: "))
+for _ in range(n):
+    c = int(input("Enter credits: "))
+    g = input("Enter grade: ")
+    s.add_sub(c, g)
+print(s.name, "CGPA:", s.cgpa())

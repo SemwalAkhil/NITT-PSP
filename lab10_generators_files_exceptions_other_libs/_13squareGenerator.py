@@ -4,6 +4,6 @@ def squares():
         yield n * n
         n += 1
 
-
+n = int(input("Enter number of terms: "))
 g = squares()
-print([next(g) for _ in range(7)])  
+print([next(g) for _ in range(n)])
