@@ -1,0 +1,22 @@
+{
+    "Akhil": {
+        "email": "akhil@example.com",
+        "phone": "9876543210"
+    },
+    "Rahul": {
+        "email": "rahul@example.com",
+        "phone": "9123456780"
+    },
+    "Priya": {
+        "email": "priya@example.com",
+        "phone": "9988776655"
+    },
+    "Ankit": {
+        "email": "ankit@example.com",
+        "phone": "9811223344"
+    },
+    "Sneha": {
+        "email": "sneha@example.com",
+        "phone": "9744556677"
+    }
+}

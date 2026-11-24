@@ -1,6 +1,11 @@
 # 17. Write a program to inspect and summarize student dataset using pandas.
-# Input: None (data defined in the script)
+# Input: (y), (n)
 # Output:
+#   Run 1:
+#   Shape: (25, 13)
+#   Average CGPA: 3.42
+#   Average Age: 22.04
+#   Run 2:
 #   Shape: (4464, 13)
 #   Average CGPA: 3.41
 #   Average Age: 22.62
@@ -8,7 +13,14 @@
 import os
 import pandas as pd
 
-csv_path = os.path.join(os.path.dirname(__file__), "Student_Depression_Dataset.csv")
+script_dir = os.path.dirname(os.path.abspath(__file__))
+use_small = input("Use small sample file? (y/n): ").strip().lower()
+
+if use_small in ("y", "yes"):
+    csv_path = os.path.join(script_dir, "sample_data", "Student_Depression_Dataset_sample.csv")
+else:
+    csv_path = os.path.join(script_dir, "Student_Depression_Dataset.csv")
+
 df = pd.read_csv(csv_path, encoding="utf-8-sig")
 
 print("Shape:", df.shape)

@@ -1,0 +1,26 @@
+Gender,Age,Family_background,Relationship_status,Marital_status,Living_style,Current_semester,CGPA,friend_circle,Health_condition,Cost_without_study,Home_division,Depression
+Female,22,Middle class,Single,Unmarried,Bachelor,8,3.43,Yes,Critical,10113,Chittagong,Yes
+Male,19,Middle class,Single,Unmarried,Bachelor,2,3.7,Yes,Abnormal,13815,Chittagong,Yes
+Male,23,Middle class,Single,Unmarried,Family,8,3.28,No,Abnormal,15450,Dhaka,Yes
+Male,20,Middle class,Complicated,Unmarried,Family,2,3.77,No,Good,17413,Dhaka,No
+Female,21,Middle class,Single,Unmarried,Family,1,4,No,Abnormal,16693,Dhaka,Yes
+Female,24,Middle class,Single,Unmarried,Bachelor,9,3.8,Yes,Normal,17244,Chittagong,No
+Female,21,Lower Middle class,Single,Unmarried,Family,9,3.5,Yes,Normal,1648,Dhaka,No
+Female,19,Middle class,Single,Unmarried,Family,2,2.71,Yes,Abnormal,16782,Rajshahi,Yes
+Female,21,Middle class,Single,Unmarried,Family,3,3.1,Yes,Abnormal,13386,Dhaka,Yes
+Female,22,Middle class,In a Relationship,Married,Family,4,3.34,Yes,Normal,18131,Mymensingh,No
+Female,23,Middle class,Single,Unmarried,Bachelor,7,2.89,No,Normal,16211,Barisal,Yes
+Male,22,Lower Middle class,Single,Unmarried,Family,8,2.8,No,Normal,611,Rangpur,Yes
+Female,22,Middle class,Complicated,Unmarried,Family,8,3.15,Yes,Abnormal,14437,Dhaka,Yes
+Male,25,Middle class,Single,Unmarried,Bachelor,8,3.26,Yes,Abnormal,17971,Khulna,Yes
+Male,24,Middle class,Single,Unmarried,Bachelor,8,3,Yes,Critical,13300,Chittagong,Yes
+Female,22,Middle class,Single,Unmarried,Bachelor,8,3.66,Yes,Normal,16357,Rajshahi,No
+Male,23,Middle class,Single,Unmarried,Family,8,3.28,Yes,Critical,16733,Dhaka,Yes
+Female,24,Middle class,Single,Unmarried,Family,7,3.15,Yes,Critical,19757,Dhaka,Yes
+Female,21,Middle class,Complicated,Unmarried,Bachelor,7,3.74,No,Abnormal,15010,Dhaka,No
+Male,23,Middle class,Single,Unmarried,Family,8,3.8,Yes,Good,11269,Chittagong,No
+Female,24,Middle class,Single,Unmarried,Family,7,3.25,Yes,Abnormal,13222,Khulna,Yes
+Female,22,Middle class,Single,Unmarried,Bachelor,3,3.5,No,Abnormal,10619,Rajshahi,Yes
+Female,21,Middle class,Single,Unmarried,Bachelor,2,3.91,Yes,Normal,18472,Dhaka,No
+Female,22,Middle class,Single,Unmarried,Bachelor,6,3.76,Yes,Abnormal,16509,Mymensingh,Yes
+Female,21,Middle class,Single,Unmarried,Bachelor,2,3.81,Yes,Abnormal,17328,Rajshahi,Yes

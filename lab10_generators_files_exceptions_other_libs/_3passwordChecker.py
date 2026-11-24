@@ -1,28 +1,41 @@
 # 3. Write a program to validate passwords from a file and write a report of strong and weak passwords.
-# Input: (passwords.txt password_report.txt 3 Pass@1234 weakpass Secure#99), (pw.txt rep.txt 1 test)
+# Input: (1 report_clean.txt), (2 report_errors.txt)
 # Output:
-#   Run 1:
-#   Report written to password_report.txt:
 #   Pass@1234: Strong
 #   weakpass: Weak
-#   Secure#99: Strong
-#   Run 2:
-#   Report written to rep.txt:
-#   test: Weak
+#   Secure#2026: Strong
+#   admin: Weak
+#   Python@Lab1: Strong
+#   hello123: Weak
+#   NITT#MCA26: Weak
+#   qwerty: Weak
+#   Super!Secret9: Strong
 
 import re
+import os
 
 def is_strong(password: str):
     return (len(password) >= 8 and re.search(r"\d", password)
             and re.search(r"[A-Z]", password) and re.search(r"[a-z]", password)
             and re.search(r"[^A-Za-z0-9\s]", password))
 
-in_file = input("Enter input passwords filename: ")
-out_file = input("Enter output report filename: ")
-n = int(input("Enter number of passwords: "))
-with open(in_file, "w") as f:
-    for i in range(n):
-        f.write(input("Enter password: ") + "\n")
+sample_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "sample_data")
+choice = input("Use sample data? (1 = clean, 2 = with errors, 0 = type my own): ").strip()
+
+if choice == "1":
+    in_file = os.path.join(sample_dir, "passwords_clean.txt")
+elif choice == "2":
+    in_file = os.path.join(sample_dir, "passwords_errors.txt")
+else:
+    in_file = input("Enter input passwords filename: ")
+    out_file = input("Enter output report filename: ")
+    n = int(input("Enter number of passwords: "))
+    with open(in_file, "w") as f:
+        for i in range(n):
+            f.write(input("Enter password: ") + "\n")
+
+if choice in ("1", "2"):
+    out_file = input("Enter output report filename: ")
 
 try:
     with open(in_file, "r") as fin, open(out_file, "w") as fout:

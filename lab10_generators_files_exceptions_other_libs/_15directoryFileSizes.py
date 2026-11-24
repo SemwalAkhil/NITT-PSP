@@ -1,8 +1,16 @@
 # 15. Write a program to traverse a directory and display file names and sizes in bytes.
-# Input: ("."), ("..")
+# Input: ("sample_data/sample_folder")
 # Output:
-#   Total files: 18
-#   Total size: 30000 bytes
+#          0 bytes | E:\NITT-PSP-Lab\NITT-PSP\lab10_generators_files_exceptions_other_libs\sample_data\sample_folder\empty.txt
+#         18 bytes | E:\NITT-PSP-Lab\NITT-PSP\lab10_generators_files_exceptions_other_libs\sample_data\sample_folder\readme.txt
+#         26 bytes | E:\NITT-PSP-Lab\NITT-PSP\lab10_generators_files_exceptions_other_libs\sample_data\sample_folder\docs\guide.txt
+#         26 bytes | E:\NITT-PSP-Lab\NITT-PSP\lab10_generators_files_exceptions_other_libs\sample_data\sample_folder\docs\manual.txt
+#         25 bytes | E:\NITT-PSP-Lab\NITT-PSP\lab10_generators_files_exceptions_other_libs\sample_data\sample_folder\docs\notes\ideas.txt
+#         24 bytes | E:\NITT-PSP-Lab\NITT-PSP\lab10_generators_files_exceptions_other_libs\sample_data\sample_folder\docs\notes\todo.txt
+#         30 bytes | E:\NITT-PSP-Lab\NITT-PSP\lab10_generators_files_exceptions_other_libs\sample_data\sample_folder\images\logo.txt
+#   --------------------------------------------------
+#   Total files: 7
+#   Total size: 149 bytes
 
 import os
 
