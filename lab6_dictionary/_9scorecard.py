@@ -1,10 +1,16 @@
-# 9. Write a program to read match statistics from the user and find top run-scorers and wicket-takers.
+# 9. Write a program to find players and teams with maximum runs and wickets from cricket match data.
 # Input: (2 CSK 2 "Ruturaj Gaikwad" 45 0 "Deepak Chahar" 4 3 MI 2 "Rohit Sharma" 25 0 "Jasprit Bumrah" 2 3), (1 CSK 1 "Dhoni" 50 0)
 # Output:
+#   Run 1:
 #   Player with max runs Ruturaj Gaikwad - 45 runs
 #   Player with max wickets Deepak Chahar - 3 wickets
 #   Team with max runs CSK - 49 runs
 #   Team with max wickets CSK - 3 wickets
+#   Run 2:
+#   Player with max runs Dhoni - 50 runs
+#   Player with max wickets  - 0 wickets
+#   Team with max runs CSK - 50 runs
+#   Team with max wickets  - 0 wickets
 
 num_teams = int(input("Enter number of teams: "))
 match_data:dict[str,list] = {}

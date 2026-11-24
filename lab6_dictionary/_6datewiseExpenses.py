@@ -1,9 +1,14 @@
-# 6. Write a program to read expenses from the user and calculate datewise and monthwise expense totals.
+# 6. Write a program to record expenses by date and calculate monthly and date-wise totals using dictionaries.
 # Input: (6 17-01-2026 "500 1000 2000" 29-01-2026 "100 200" 22-02-2026 "50 50" 04-03-2026 "100 100" 05-04-2026 "50 2000" 06-04-2026 "400 1600"), (2 01-01-2026 "100 200" 02-02-2026 "300")
 # Output:
+#   Run 1:
 #   17-01-2026: 3500
 #   29-01-2026: 300
 #   {'01': 3800, '02': 100, '03': 200, '04': 4050}
+#   Run 2:
+#   01-01-2026: 300
+#   02-02-2026: 300
+#   {'01': 300, '02': 300}
 
 n = int(input("Enter number of dates: "))
 expenses = {}

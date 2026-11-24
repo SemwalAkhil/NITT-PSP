@@ -1,9 +1,14 @@
-# 8. Write a program to read a graph from the user and compute Jaccard similarity and in/out degrees of nodes.
+# 8. Write a program to calculate in-degree and out-degree of nodes in a directed graph using dictionaries.
 # Input: (6 A "B C" B "A D E" C A D B E "B D" F "C A"), (3 1 "2 3" 2 3 3 1)
 # Output:
+#   Run 1:
 #   A: OUT: 2 IN: 3
 #   B: OUT: 3 IN: 3
 #   C: OUT: 1 IN: 2
+#   Run 2:
+#   1: OUT: 2 IN: 1
+#   2: OUT: 1 IN: 1
+#   3: OUT: 1 IN: 2
 
 num_nodes = int(input("Enter number of nodes: "))
 graph = {}

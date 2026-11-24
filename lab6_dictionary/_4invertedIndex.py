@@ -1,9 +1,15 @@
-# 4. Write a program to read documents from the user, build an inverted index, and retrieve top 3 matching pages for a query phrase.
+# 4. Write a program to build an inverted index from text pages and rank pages by matching query terms.
 # Input: (2 "python is fun" "python lab programming" "python"), (1 "hello world" "world")
 # Output:
+#   Run 1:
 #   ============= TOP 3 Pages ============= 
 #   Page: 1 Matches: 1
 #   Page: 2 Matches: 1
+#   Page: 0 Matches: 0
+#   Run 2:
+#   ============= TOP 3 Pages ============= 
+#   Page: 1 Matches: 1
+#   Page: 0 Matches: 0
 #   Page: 0 Matches: 0
 
 import re
