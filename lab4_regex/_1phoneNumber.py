@@ -1,9 +1,12 @@
-# 1. Write a program to extract country code, area code, and number from a landline number using regex.
+# 1. Write a program using regular expressions to validate and parse a landline phone number.
 # Input: (91-044-1234-5678), (12-345)
 # Output:
+#   Run 1:
 #   Country Code: 91
 #   Area Code: 044
 #   Number: 1234-5678
+#   Run 2:
+#   Invalid
 
 import re
 phoneNumber = input("Enter landline number (xx-xxx-xxxx-xxxx): ")
