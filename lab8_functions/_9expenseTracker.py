@@ -1,8 +1,12 @@
-# 9. Write functions to add expenses, calculate total expense, and calculate datewise expense totals.
+# 9. Write a program using functions to compute date-wise and overall expenses from user records.
 # Input: (3 01-10-2026 500 01-10-2026 300 02-10-2026 700), (1 01-01-2026 100)
 # Output:
+#   Run 1:
 #   Datewise:  {'01-10-2026': 800, '02-10-2026': 700}
 #   Total:  1500
+#   Run 2:
+#   Datewise:  {'01-01-2026': 100}
+#   Total:  100
 
 def addExpense(expenses: dict, date: str, amount: int):
     if date in expenses:

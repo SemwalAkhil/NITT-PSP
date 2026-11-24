@@ -1,8 +1,12 @@
-# 6. Write functions to add and subtract two polynomials represented as coefficient lists.
+# 6. Write a program to add and subtract two polynomials represented by lists of coefficients.
 # Input: ("2 0 3" "1 4 1"), ("1 2" "3 4")
 # Output:
+#   Run 1:
 #   Add:  [3, 4, 4]
 #   Sub:  [1, -4, 2]
+#   Run 2:
+#   Add:  [4, 6]
+#   Sub:  [-2, -2]
 
 def addPoly(p1: list[int], p2: list[int]):
     n = max(len(p1), len(p2))
