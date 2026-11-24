@@ -1,10 +1,14 @@
-# 6. Write a program to serialize and deserialize student marks using pickle and compute percentages.
+# 6. Write a program to serialize student marks dictionary to a binary file using pickle and calculate percentages.
 # Input: (marks.dat 3 1 "60 80 30 70" 2 "90 60 50 40" 3 "10 50 30 40"), (m.dat 1 101 "75 85")
 # Output:
+#   Run 1:
 #   Student Percentages:
 #   Roll 1: 60.00%
 #   Roll 2: 60.00%
 #   Roll 3: 32.50%
+#   Run 2:
+#   Student Percentages:
+#   Roll 101: 80.00%
 
 import pickle
 

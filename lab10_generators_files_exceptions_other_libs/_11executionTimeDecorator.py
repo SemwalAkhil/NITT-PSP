@@ -1,3 +1,7 @@
+# 11. Write a decorator to measure and print the execution time of a function.
+# Input: (10), (100)
+# Output: Sum: 55, Sum: 5050
+
 import time
 
 def timer(func):

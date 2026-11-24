@@ -1,10 +1,14 @@
-# 3. Write a program to read passwords from a text file, check strength, and write a report to another file.
+# 3. Write a program to validate passwords from a file and write a report of strong and weak passwords.
 # Input: (passwords.txt password_report.txt 3 Pass@1234 weakpass Secure#99), (pw.txt rep.txt 1 test)
 # Output:
+#   Run 1:
 #   Report written to password_report.txt:
 #   Pass@1234: Strong
 #   weakpass: Weak
 #   Secure#99: Strong
+#   Run 2:
+#   Report written to rep.txt:
+#   test: Weak
 
 import re
 

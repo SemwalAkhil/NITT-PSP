@@ -1,9 +1,12 @@
-# 4. Write a program to decode train codes from a file, validate length by raising ValueError, and handle errors.
+# 4. Write a program to decode train codes from a file and log error details for invalid lines.
 # Input: (train_codes.txt 3 MAS-SBC-SERSR-701 SHORT123 NDLSBCT-VE-NR-502), (codes.txt 1 BAD)
 # Output:
+#   Run 1:
 #   Decoded MAS-SBC-SERSR-701: {'source': 'MAS', 'destination': 'SBC', 'type': 'SE', 'zone': 'RSR', 'frequency': '7', 'serial': '01'}
 #   Error decoding 'SHORT123': Invalid code length 8
 #   Decoded NDLSBCT-VE-NR-502: {'source': 'NDLS', 'destination': 'BCT', 'type': 'VE', 'zone': 'NR', 'frequency': '5', 'serial': '02'}
+#   Run 2:
+#   Error decoding 'BAD': Invalid code length 3
 
 def decode_train_code(code: str):
     if len(code) != 17:

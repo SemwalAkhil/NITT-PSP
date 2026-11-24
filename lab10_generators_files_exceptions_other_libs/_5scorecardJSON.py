@@ -1,6 +1,10 @@
-# 5. Write a program to read match statistics from a CSV file, compute top team and player, and save as JSON.
+# 5. Write a program to read cricket match stats from a CSV file, find best player and team, and save to JSON.
 # Input: (match_data.csv match_result.json 4 CSK "Ruturaj Gaikwad" 45 0 CSK "Deepak Chahar" 4 3 SRH "Travis Head" 89 0 SRH "Pat Cummins" 6 2), (m.csv r.json 1 MI Rohit 50 0)
-# Output: Match result saved to JSON: {'best_player': {'name': 'Travis Head', 'runs': 89}, 'best_team': {'name': 'SRH', 'runs': 95}}
+# Output:
+#   Run 1:
+#   Match result saved to JSON: {'best_player': {'name': 'Travis Head', 'runs': 89}, 'best_team': {'name': 'SRH', 'runs': 95}}
+#   Run 2:
+#   Match result saved to JSON: {'best_player': {'name': 'Rohit', 'runs': 50}, 'best_team': {'name': 'MI', 'runs': 50}}
 
 import csv
 import json

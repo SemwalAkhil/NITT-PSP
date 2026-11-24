@@ -1,3 +1,11 @@
+# 8. Write a program to clean and preprocess a tweet by composing text-processing lambda functions.
+# Input: ("@dev Python is the best!! Check https://python.org"), ("Hello #world @test check http://abc.com 123")
+# Output:
+#   Run 1:
+#   ['python', 'best', 'check']
+#   Run 2:
+#   ['hello', 'world', 'check']
+
 import re
 from functools import reduce
 

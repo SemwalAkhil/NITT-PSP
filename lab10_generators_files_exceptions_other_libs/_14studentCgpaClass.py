@@ -1,3 +1,7 @@
+# 14. Write a Student class to track courses, credits, and grades and compute CGPA.
+# Input: (Rahul 101 2 4 O 3 A), (Alice 102 1 4 B)
+# Output: Rahul CGPA: 9.57, Alice CGPA: 8.0
+
 class Student:
     grades = {"O": 10, "A": 9, "B": 8, "C": 7, "F": 0}
 

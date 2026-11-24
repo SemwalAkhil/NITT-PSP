@@ -1,4 +1,7 @@
-"""Menu-driven program combining all 6 Lab 10 Python exercises."""
+# 9. Menu-driven program combining lab exercises into a single interface.
+# Input: (q)
+# Output:
+#   Goodbye!
 
 import re
 import time

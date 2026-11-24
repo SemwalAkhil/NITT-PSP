@@ -1,3 +1,9 @@
+# 15. Write a program to traverse a directory and display file names and sizes in bytes.
+# Input: ("."), ("..")
+# Output:
+#   Total files: 18
+#   Total size: 30000 bytes
+
 import os
 
 folder = input("Enter folder path: ").strip() or "."

@@ -1,3 +1,10 @@
+# 17. Write a program to inspect and summarize student dataset using pandas.
+# Input: None (data defined in the script)
+# Output:
+#   Shape: (4464, 13)
+#   Average CGPA: 3.41
+#   Average Age: 22.62
+
 import os
 import pandas as pd
 

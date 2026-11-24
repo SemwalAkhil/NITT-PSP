@@ -1,3 +1,7 @@
+# 10. Write a decorator to authenticate username and password before allowing function execution.
+# Input: (admin 1234 5 10), (admin 0000 5 10)
+# Output: 15, Access Denied
+
 db = {"admin": "1234", "rahul": "pass"}
 
 def auth(func):

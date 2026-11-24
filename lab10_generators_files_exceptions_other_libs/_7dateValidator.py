@@ -1,10 +1,14 @@
-# 7. Write a program to validate date formats from a file using try-except ValueError and finally block.
+# 7. Write a program to validate dates in a file line by line using try-except-finally.
 # Input: (dates.txt 4 10-05-2026 29-02-1909 32-07-2006 29-02-2024), (d.txt 1 15-08-2023)
 # Output:
+#   Run 1:
 #   Valid date: 10-05-2026
 #   Invalid date: 29-02-1909
 #   Invalid date: 32-07-2006
 #   Valid date: 29-02-2024
+#   File closed successfully in finally block
+#   Run 2:
+#   Valid date: 15-08-2023
 #   File closed successfully in finally block
 
 from datetime import datetime
