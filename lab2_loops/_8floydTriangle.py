@@ -1,10 +1,15 @@
 # 8. Write a program to print Floyd's triangle for N rows using nested loops.
 # Input: (4), (3)
 # Output:
+#   Run 1:
 #   1
 #   2 3
 #   4 5 6
 #   7 8 9 10
+#   Run 2:
+#   1
+#   2 3
+#   4 5 6
 
 '''
 1

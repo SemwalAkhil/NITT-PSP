@@ -1,9 +1,15 @@
 # 15. Write a program to print a palindromic number pyramid pattern for N rows.
 # Input: (3), (4)
 # Output:
+#   Run 1:
 #       1
 #     1 2 1
 #   1 2 3 2 1
+#   Run 2:
+#         1
+#       1 2 1
+#     1 2 3 2 1
+#   1 2 3 4 3 2 1
 
 '''
       1
