@@ -1,9 +1,13 @@
-# 11. Write a program to read coordinate points from the user and classify them into quadrants and axes using dictionary comprehension.
+# 11. Write a program to classify 2D coordinates into quadrants using dictionary comprehension.
 # Input: (3 "1 2" "-2 3" "0 0"), (2 "4 -1" "-5 -5")
 # Output:
+#   Run 1:
 #   I: [(1, 2)]
 #   II: [(-2, 3)]
 #   O: [(0, 0)]
+#   Run 2:
+#   III: [(-5, -5)]
+#   IV: [(4, -1)]
 
 n = int(input("Enter number of coordinates: "))
 coords = []
