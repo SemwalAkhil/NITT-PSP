@@ -1,5 +1,5 @@
 # 17. Write a program to inspect and summarize student dataset using pandas.
-# Input: (y), (n)
+# Input: NA
 # Output:
 #   Run 1:
 #   Shape: (25, 13)
@@ -14,12 +14,8 @@ import os
 import pandas as pd
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
-use_small = input("Use small sample file? (y/n): ").strip().lower()
+csv_path = os.path.join(script_dir, "sample_data", "Student_Depression_Dataset_sample.csv")
 
-if use_small in ("y", "yes"):
-    csv_path = os.path.join(script_dir, "sample_data", "Student_Depression_Dataset_sample.csv")
-else:
-    csv_path = os.path.join(script_dir, "Student_Depression_Dataset.csv")
 
 df = pd.read_csv(csv_path, encoding="utf-8-sig")
 
