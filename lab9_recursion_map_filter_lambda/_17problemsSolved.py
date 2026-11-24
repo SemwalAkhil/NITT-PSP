@@ -1,11 +1,16 @@
-# 17. Write a program to read topic-wise problem counts and find the category with max solved using reduce.
+# 17. Write a program to sum problems solved per topic and find the maximum topic using map, lambda, and reduce.
 # Input: (4 list "5 4 6" tuple "3 4 7" regex "1 2 6" strings "3 2 6"), (2 math "5 5" logic "10 2")
 # Output:
+#   Run 1:
 #   list: 15
 #   tuple: 14
 #   regex: 9
 #   strings: 11
 #   Max:  list
+#   Run 2:
+#   math: 10
+#   logic: 12
+#   Max:  logic
 
 import functools as f
 

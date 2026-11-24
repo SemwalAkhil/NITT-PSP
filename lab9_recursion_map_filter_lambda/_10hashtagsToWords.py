@@ -1,8 +1,12 @@
-# 10. Write a program to split hashtags into separated words using map, lambda, and regex.
+# 10. Write a program to convert camelCase hashtags into separated words using regular expressions.
 # Input: ("#HelloWorld #PythonLab"), ("#QuickBrown #FoxJumps")
 # Output:
+#   Run 1:
 #   Hello World
 #   Python Lab
+#   Run 2:
+#   Quick Brown
+#   Fox Jumps
 
 import re
 hashtags = input("Enter hashtag: ").split()
